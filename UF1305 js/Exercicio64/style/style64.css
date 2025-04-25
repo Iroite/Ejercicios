@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; no veo que haga nada   */
+ background: #66D1FF;/*linear-gradient(rgb(18, 18, 82), rgb(184, 184, 184)); */;
+ color:rgb(78, 77, 77);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ 
+ font-family:var(--font-primary) ;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family:Poppins;
+    src: url(../fonts/Poppins.ttf);
+}
+:root{
+    --font-primary:Poppins;
+}
+
+.input{
+    margin-top: 10rem;
+}
+
+  /* Fondo */
+  
+  /* .fondo-dia{
+    background: linear-gradient(125deg, #97c1e8 0%, #61a1dd 17%, #002e7a 100%);
+  }
+  
+  .fondo-noite{
+    background: linear-gradient(125deg, #012241 0%, #013565 17%, #002e7a 100%);
+  }
+   */
+
+/* Weather  el icono del sol se mueve lentamente*/
+  
+.weather__icon{
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    animation: movemento 60s ease-in-out infinite;
+  }
+  
+  @keyframes movemento {
+  
+    0%, 100%{
+      scale: 1;
+      rotate:0deg;
+    }
+  
+    50%{
+      scale: .80;
+      rotate:360deg;
+    }
+    
+  }
+
+.control{
+    margin-bottom: 2rem;
+}
+
+.navbar-item{
+    font-size: 1.5rem;
+}
+
+a{
+    font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
+}
+#dategl{
+    font-size: 1.5rem;
+}
+
+#forecast-container{
+    display:flex;
+    justify-content: center;
+    background-color: #aea9fa;
+    height:15rem;
+    width: 5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    
+    
+}
+
+#forecast-template{
+    background-color: #fafbfc;
+    height: 15rem;
+    width: 5rem;
+}
+#pronostico__container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+#pronostico__card{
+    background-color: #b9dcff;
+    padding: 3rem;
+}
+#date{
+    display: flex;
+    justify-content: center;
+    font-family: Tahoma;
+    background-color: none;
+    border: 0px solid rgb(179, 29, 29);
+    border-radius: 1rem;
+
+}
+
+#weather__icon{
+    background-color: #a5cffa;
+    height: 6rem;
+    border: 2px solid silver;
+    border-radius: 0.5rem;
+}
+
+#temperature{
+    background-color: #a5cffa;
+    height: 3rem;
+    width: 4.5rem;
+    border: 2px solid silver;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

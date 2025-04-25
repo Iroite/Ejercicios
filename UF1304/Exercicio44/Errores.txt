@@ -1,0 +1,4 @@
+El menu superior no tiene separación entre los enlaces
+Falta la barra vertical que separa el menu inferior
+La sombra del menu inferior no llega a los extremos horizontales
+tipo motor me pisa el Modelo

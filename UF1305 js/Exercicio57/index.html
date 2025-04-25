@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio57</title>
+    <link rel="stylesheet" href="./style/style.exercicio57.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="nav__menu"><div class="logo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="139" height="33" viewBox="0 0 139 33" fill="none">
+            <path d="M40.0017 16.5317V16.5008C39.9659 14.7699 40.6078 13.0987 41.7791 11.8727C42.9504 10.6468 44.55 9.97218 46.2086 10.0045C47.9708 9.93587 49.6788 10.6475 50.9112 11.9639L49.5549 13.6019C48.6791 12.632 47.4675 12.0688 46.1908 12.0381C43.9047 12.0381 42.2227 14.0098 42.2227 16.4698V16.5069C42.2227 18.9793 43.8869 20.9511 46.1908 20.9511C47.5065 20.937 48.7573 20.3526 49.6437 19.3378L51 20.7718C49.7753 22.2397 47.9839 23.0565 46.1198 22.997C44.4782 23.0159 42.8997 22.3381 41.7462 21.1191C40.5927 19.9001 39.963 18.2444 40.0017 16.5317Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M56 16.5017V16.5332C56.1158 20.1448 59.0008 23.0085 62.5148 23C66.0289 22.9915 68.9008 20.1138 69 16.5017V16.4639C68.8827 12.8523 65.9964 9.98984 62.4822 10.0001C58.968 10.0103 56.0974 12.8895 56 16.5017ZM66.7098 16.5017V16.5332C66.7618 17.7083 66.3433 18.854 65.552 19.7035C64.7606 20.5529 63.6654 21.032 62.5214 21.029C61.3705 21.0247 60.2705 20.5405 59.473 19.6872C58.6755 18.8339 58.2487 17.6844 58.2902 16.5017V16.4639C58.2401 15.2865 58.6594 14.139 59.4512 13.2868C60.2429 12.4346 61.3385 11.9515 62.4847 11.9492C63.6357 11.9655 64.7319 12.4571 65.5267 13.3134C66.3214 14.1697 66.7478 15.3187 66.7098 16.5017Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M79.7677 10.0086H74L74.0191 23H76.2879V18.4712H79.1112L82.2978 23H85L81.5012 18.0811C83.3388 17.6888 84.6326 16.0318 84.573 14.1472V14.1088C84.6033 13.0631 84.2181 12.0483 83.5023 11.2879C82.4712 10.3892 81.1311 9.93018 79.7677 10.0086ZM82.2596 14.2751C82.2596 15.5928 81.2271 16.4499 79.5956 16.4499H76.2879V12.0875H79.5829C81.2654 12.0875 82.2596 12.8487 82.2596 14.2431V14.2751Z" fill="white"/>
+            <path d="M89 20.9701L90.2333 19.3774C91.2191 20.4228 92.5342 21.0192 93.9101 21.045C95.1778 21.045 95.9751 20.4204 95.9751 19.4461V19.4461C95.9751 18.5404 95.5105 18.047 93.348 17.5036C90.8642 16.879 89.4704 16.0545 89.4704 13.7185V13.6811C89.4704 11.5075 91.1338 10.0022 93.4455 10.0022C94.9702 9.96078 96.4594 10.5072 97.6501 11.5449L96.5488 13.2313C95.6547 12.4314 94.5445 11.9729 93.3881 11.9259C92.1893 11.9259 91.4895 12.6005 91.4895 13.4312V13.4687C91.4895 14.4493 92.0229 14.8803 94.2715 15.4611C96.7323 16.0857 98 17.0726 98 19.1775V19.215C98 21.5884 96.2792 23 93.8356 23C92.0482 23.0005 90.3245 22.2769 89 20.9701V20.9701Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M110.514 10H108.48L103 23H105.242L106.526 19.8851H112.424L113.69 23H116L110.514 10ZM109.463 12.7081L111.62 17.8699H107.325L109.463 12.7081Z" fill="white"/>
+            <path d="M121 10H123V23H121V10Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M133.799 10.0086H128.038L128 23H130.273V18.4712H133.118L136.301 23H139L135.512 18.0811C137.355 17.6968 138.657 16.0377 138.599 14.1472V14.0896C138.624 13.0505 138.24 12.0435 137.53 11.2879C136.5 10.3892 135.161 9.93018 133.799 10.0086ZM136.295 14.2751C136.295 15.5928 135.257 16.4499 133.634 16.4499H130.311V12.0875H133.615C135.295 12.0875 136.295 12.8487 136.295 14.2431V14.2751Z" fill="white"/>
+            <path d="M19 0C19 0 21.5658 5.56069 21.0966 7.88134C21.0966 7.88134 27.7904 10.1893 28.5328 14C28.5328 14 32.1974 8.85145 19 0Z" fill="white"/>
+            <path d="M15.5956 8.20261C16.2113 9.75068 16.6817 11.3573 17 13L13.0063 11.4248C13.3762 8.87582 11 5 11 5L15.5956 8.20261Z" fill="white"/>
+            <path d="M9.68243 11.6163C10.2229 13.0432 10.6632 14.5082 11 16L7.08108 14.998C7.48649 12.2843 5 9 5 9L9.68243 11.6163Z" fill="white"/>
+            <path d="M16.5641 7C16.5641 7 32.7645 18.0905 33.8303 22.3922C34.6391 25.6308 32.2943 28.6188 32.2943 28.6188C32.2943 28.6188 31.0404 20.1741 0 33C3.20784 29.6281 4.80215 25.0908 4.38866 20.5102C4.21212 18.6283 3.69639 16.7915 2.86517 15.0841L10.1378 18.8482C10.1378 18.9582 10.1378 19.0682 10.1692 19.1843C10.4434 21.9548 10.2313 24.7506 9.5422 27.4517C11.0875 24.2955 11.7266 20.7902 11.3917 17.3083C11.2064 15.1815 10.6642 13.0986 9.78671 11.1429L17.5609 16.1962C17.5923 16.4468 17.6111 16.6973 17.6361 16.9539C17.9445 20.0093 17.6595 23.0938 16.796 26.0463C20.1112 20.0875 20.0234 12.8804 16.5641 7Z" fill="white"/>
+          </svg></a></div>
+             <div class="menu"><ul class="ul__menu">
+                            <li><a href="#" id="dropdownBtn">PRODUCTOS</a></li>
+                            <li><a href="#">GUÍAS</a></li>
+                            <li><a href="#">SOFTWARE</a></li>
+                            <li><a href="#">SOPORTE</a></li>
+        </ul></div>
+    <div class="iconos">
+    <DIV class="lupa"><a href="#"><img src="./assets/img/lupa.svg" alt=""></a></DIV>
+    <div class="carrito"><a href="#"><img src="./assets/img/carrito.svg" alt=""></a></div></div>
+    </nav>
+    <div  id="dropdown" class="dropdown ">
+        <div class="nav__menu__desplegable">
+
+       
+        <div class="componentes">
+            <ul>
+                <li><a href="#"><img class="icon" src="./assets/img/nav_components_icon.avif" alt=""></a></li>
+                <li><a href="#">COMPONETES PARA PC</a></li>
+                <li><a href="#">Chasis</a></li>
+                <li><a href="#">iClue LINK</a></li>
+                <li><a href="#">Refrigeradores de CPU</a></li>
+                <li><a href="#">Ventiladores</a></li>
+                <li><a href="#">Refrigeración personalizada</a></li>
+                <li><a href="#">Memoria</a></li>
+                <li><a href="#">Almacenamiento</a></li>
+                <li><a href="#">Fuentes de alimentación</a></li>
+                <li><a href="#">Concentradores y bases</a></li>
+                
+            </ul>
+        </div>
+        <div class="perifericos">
+            <ul>
+                <li><a href="#"><img class="icon" src="./assets/img/nav_peripherals_icon.avif" alt=""></a></li>
+                <li><a href="#">PERIFÉRICOS GAMING</a></li>
+                <li><a href="#">CORSAIR Custom Lab</a></li>
+                <li><a href="#">Teclados</a></li>
+                <li><a href="#">Auriculares</a></li>
+                <li><a href="#">Alfombrillas</a></li>
+                <li><a href="#">Iluminación ambiental</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+
+        <div class="pcparajuegos"><ul>
+            <li><a href="#"><img class="icon" src="./assets/img/nav_pc-monitors_icon.avif" alt=""></a></li>
+            <li>PC PARA JUEGOS</li>
+            <li><a href="#">Pc para jugos</a></li>
+            <li><a href="#">PC CORSAIR ONE</a></li>
+            <li><a href="#">Monitores</a></li>
+        </ul></div>
+        <div class="muebles"><ul>
+            <li><a href="#"><img class="icon" src="./assets/img/nav_gamingdesk_icon.avif" alt=""></a></li>
+            <li>MUEBLES PARA JUEGOS</li>
+            <li><a href="#">Escritorios </a></li>
+            <li><a href="#">Sillas </a></li>
+        </ul></div>
+
+        <div>
+            <ul>
+                <li><a href="#"></a><img class="icon" src="./assets/img/nav_shoppingcart_icon.avif" alt=""></li>
+                <li><a href="#">COMPRAR CORSAIR</a></li>
+                <li><a href="#">Nuevos productos</a></li>
+                <li><a href="#">Ofertas especiales</a></li>
+                <li><a href="#">Creador de Pc</a></li>
+                <li><a href="#">Superventas</a></li>
+                <li><a href="#">Exclusivo de CORSAIR</a></li>
+                <li><a href="#">Indumentaria</a></li>
+            </ul>
+        </div>
+        <div class="anuncios"><svg xmlns="http://www.w3.org/2000/svg" width="300" height="2" viewBox="0 0 300 2" fill="none">
+            <path d="M0.5 0.5H299.5" stroke="#979797" stroke-width="2" stroke-linecap="square"/>
+            </svg>
+            <div class="menu__derecha">
+                <div class="raton__iz">
+                    <div class="text_up">CONOZCA EL SCIMITAR ELITE WIRELESS SE</div>
+                    <div class="enlace"><a class="anuncios__a" href="#">Comprar ahora</a></div>
+                </div>
+                <div class="rato__dr"><img class="ratonyteclado" src="./assets/img/SCIMITAR_ELITE_SE.avif" alt=""></div>
+            </div>
+
+
+
+            <div class="menu__derecha">
+                <div class="raton__iz">
+                    <div class="text_down">CORSAIR CUSTOM LAB</div>
+                    <div class="enlace"><a class="anuncios__a" href="#">Más información</a></div>
+                </div>
+                <div class="rato__dr"><img class="ratonyteclado" src="./assets/img/teclado.avif" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </header>
+    <video id="video" autoplay loop muted><source src="./assets/video/video_CORSAIR_Header_2024_WQHD.webm" type=""></video>
+    <main>
+       <div class="texto"> 
+        <p class="linea">TODO LO QUE NECESITA</p>
+        <h1 class="titular">PARA <span>RENDIR</span> AL MÁXIMO</h1></div>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

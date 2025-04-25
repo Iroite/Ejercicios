@@ -1,0 +1,197 @@
+/* Estilos CSS con Flexbox */
+
+@font-face {
+    font-family:texto;
+    src: url(./assets/fonts/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: face;
+    src: url(./assets/fonts/Jersey15-Regular.ttf);
+}
+body {
+    font-family: texto;
+    color:aliceblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+background-color: #fdebeb7c;}
+
+header {
+    background-color: #fa0202d5;
+    color: #a10202;
+    text-align: center;
+    padding: 0px;
+}
+
+nav {
+    background-color: #fa0202d5;
+    color: rgb(253, 96, 96);
+    padding: 10px;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #b32e2e;
+}
+
+nav ul li a{
+    color: white;
+}
+div{
+    color: #b32e2e;
+}
+.slider__h2{
+    text-shadow: 1px 1px 3px rgb(253, 2, 2);
+    font-family:face;
+color: #fd9c9cc5;}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+}
+aside dl dd a{
+    color: #a10202px;
+}
+
+aside {
+    flex-basis: 20%;
+   }
+
+  aside  dl{
+    color:   #a10202;
+    font-family: face;
+    margin-left: 10px;
+} 
+
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.colorfuente{
+    color: #b32e2e;
+}
+article {
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+.icon_botones{
+    width: 25%;
+}
+.icono{
+    width: 25px;
+}
+.image{
+    width: 200px;
+    align-self:center;
+    
+}
+.logo{
+width: 64px;    
+align-self: center;
+padding-top: 0%;
+padding-bottom: 0%;
+padding-left: 0%;
+padding-right: 0%;
+margin-top: 0%;
+margin-bottom: 0%;
+margin-left: 0%;
+margin-right: 0%;
+}
+.main__menu{
+display: flex;   
+}
+
+video{
+    width: 400px;
+}
+
+h1 {
+    color:#fffffff5;
+    text-align:center;
+}
+h2 {
+    font-family: face;
+    color: #b32e2e;
+    text-align: center;
+    
+}
+iframe {
+    width: 60%;
+    height: 60% 
+    display: block;
+    margin: 18%;
+}
+footer {
+    background-color: #fa0303d5;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+line-height: 1;
+}
+
+footer a{
+    font-family: face;
+     color: white;
+   
+}
+footer h2{
+    color:#fdc1c1
+}
+p {
+    font-family: face;   
+    color: #ececec;
+
+        text-align:center;
+       
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}

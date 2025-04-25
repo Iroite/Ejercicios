@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: white;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 10px;
+    font-family: tahoma;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../fonts/Helvetica-Bold.ttf);
+}
+
+.nav__menu {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6.5rem;
+    padding: 0rem 2.4rem;
+
+}
+
+.header__logo {
+    width: 20.5rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+
+}
+
+.header__ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+}
+
+.header__registro {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.registro__login {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fuente {
+    text-decoration: none;
+    color: #080808;
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main__h6 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.8rem 0px;
+}
+
+.main__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+
+.main__oferta {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 18px 0px;
+    color: #FFF;
+    text-align: right;
+}
+
+/* Aquí empiezan los problemas: no centro la caja */
+
+.main__principal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 2rem 2rem;
+    margin-left: 8%;
+    /* Añadido  a capón */
+}
+
+.main__superior {
+    width: 127.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    height: 6rem;
+    background-color: #F0F0F0;
+    border-bottom: #616161 1px solid;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+    padding: 0.5rem ;
+    top: 30rem;
+    left: -55%;
+
+}
+
+.header__button {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    border: 1px;
+
+}
+
+.superior__imagen {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 127.7rem;
+    height: 71.9rem;
+    /* background: url(../assets/img/color_cars_img/azul.avif) lightgray 0px 0px / 100% 100% no-repeat; */
+    background-position: center;
+}
+
+.superior__info {
+    margin-top: 1rem;
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.info__left {
+    height: 38.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 2rem;
+    width: 50%;
+}
+
+
+.left__superior {
+    width: 64rem;
+    height: 10.8rem;
+}
+
+.ex30 {
+    color: #080808;
+    font-family: Helvetica;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pex30 {
+    color: #616161;
+    font-family: Helvetica;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.left__center {
+    color: #080808;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+    margin-top: 5rem;
+    width: 63.9rem;
+
+}
+
+.left__bottom {
+    display: flex;
+    justify-content: start;
+    align-content: baseline;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 9.7rem;
+
+}
+
+.botton__h2 {
+    color: #616161;
+    font-family: Helvetica;
+    font-size: 4rem;
+    font-style: normal;
+}
+
+.info__right {
+    width: 64rem;
+    height: 38.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.km {
+    color: #080808;
+    font-family: Helvetica;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.right {
+    color: #080808;
+    font-family: Helvetica;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.p__km {
+    color: #080808;
+    font-family: Helvetica;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right__01 {
+    width: 25rem;
+    height: 13rem;
+
+}
+
+.right__02 {
+    width: 25rem;
+    height: 13rem;
+}
+
+.right__03 {
+    width: 25rem;
+    height: 13rem;
+    margin-top: 8rem;
+}
+
+.right__04 {
+    width: 25rem;
+    height: 13rem;
+    margin-top: 5.2rem;
+}
+
+
+.main__pie {
+    margin-top: 16.2rem;
+    display: flex;
+    justify-content: center;
+    color: #616161;
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#car{
+    margin-left: 12%;
+}
+
+#azul {
+    background-image: image(url(../assets/img/color_cars_img/azul.avif));
+}
+
+#boton__azul {
+
+    background-image: image(url(../assets/img/colors_btn/color_azul.svg));
+}
+
+#boton__azul:active {
+    background-image: image(url(../assets/img/colors_btn/color_azul_active.svg));
+}
+
+#branco {
+    background-image: image(url(../assets/img/color_cars_img/branco.avif));
+}
+
+#boton__branco {
+    background-image: image(url(../assets/img/colors_btn/color_branco.svg));
+}
+
+#boton__branco:active {
+    background-image: image(url(../assets/img/colors_btn/color_branco_active.svg));
+}
+
+#negro {
+    background-image: image(url(../assets/img/color_cars_img/negro.avif));
+}
+
+#boton__negro {
+    background-image: image(url(../assets/img/colors_btn/color_negro.svg));
+}
+
+#boton__negro:active {
+    background-image: image(url(../assets/img/colors_btn/color_negro_active.svg));
+}
+
+#grisoscuro {
+    background-image: image(url(../assets/img/color_cars_img/grisoscuro.avif));
+}
+
+#boton__grisoscuro {
+    background-image: image(url(../assets/img/colors_btn/color_grisoscuro.svg));
+}
+
+#boton__grisoscuro:active {
+    background-image: image(url(../assets/img/colors_btn/color_grisoscuro_active.svg));
+}
+
+#amarelo {
+    background-image: image(url(../assets/img/color_cars_img/amarelo.avif));
+}
+
+#boton__amarelo {
+    background-image: image(url(../assets/img/colors_btn/color_amarelo.svg));
+}
+
+#boton__amarelo:active {
+    background-image: image(url(../assets/img/colors_btn/color_amarelo_active.svg));
+}
+
+.fade {
+	animation: fade-in 5s ease;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

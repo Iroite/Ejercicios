@@ -1,0 +1,2 @@
+{"listaCamaras":[{"concello":"Cariño","dataUltimaAct":"2025-03-28T15:41:00","idConcello":15901,"identificador":10911,"imaxeCamara":"https:\/\/www.meteogalicia.gal\/datosred\/camaras\/MeteoGalicia\/Carinho\/ultima.jpg","imaxeCamaraMini":"https:\/\/www.meteogalicia.gal\/datosred\/camaras\/MeteoGalicia\/Carinho\/miniUltima.jpg","lat":43.734,"lon":-7.86335,"nomeCamara":"Cariño","provincia":"A Coruña"},
+]}

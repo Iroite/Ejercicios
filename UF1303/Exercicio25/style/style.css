@@ -1,0 +1,53 @@
+* {
+  margin: 10;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(170, 170, 170);
+ color: white ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+button {
+ cursor:auto;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.box{
+    height: 300px;
+    padding: 20px;
+}
+.dr{
+    background-color: rgba(240, 53, 184, 0.74);
+    color: rgb(208, 255, 0);
+    float: left;
+    width: 25%;
+}
+.ctr{
+    background-color: rgb(127, 5, 250);
+    float: left;
+    width:45%;
+}
+.zq{
+background-color: rgb(255, 136, 0);
+float:right;
+width: 25%;
+}
+
+.pe{
+background-color:  #333;
+color: rgb(22, 235, 57);
+clear:both;
+padding: 20px;
+}

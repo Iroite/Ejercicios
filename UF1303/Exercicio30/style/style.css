@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'titular';
+  src: url("../assets/fonts/FunnelSans-VariableFont_wght.ttf");
+}
+
+#titulo {
+  font-family: 'titular';
+}
+
+body {
+  background-color: #4b0c21;
+  /* background-image: url("../assets/pics/capelada.jpg"); */
+  background-size: cover;
+  color: rgb(239, 239, 245);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font: size 12px;
+  font-family: 'titular';
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  color: #9e224c;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #f8d2e6;
+  font-family: 'titular';
+}
+
+main {
+  background-color: #9e224c;
+  display: flex;
+
+}
+
+aside {
+  background-color: #e1539069;
+    flex-grow: 1;
+  min-width: 150px;
+  padding: 10px;
+  margin: 0px;
+}
+aside a {
+  color: #f996f4;
+}
+footer {
+  background-color:  #7c1f3e;
+}
+
+.container {
+  flex-grow: 2;/* Flex grow nos indica en que proporción amplia o reduce el campo vinculado*/
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+  text-align: center;
+}
+
+@media (min-width:1200px) {/*pantallas con una resolución minima de 1200px (pantallas mayores de 1200px)*/
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (992px<=width <=1200) {/* pantallas entre 992px y 1200px de ancho*/
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+  @media (max-width:768px) {/*pantallas menores de 768px*/
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (576px <=width <=767px) {/*pantallas entre 576 y 767 px*/
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {/*pantallas entre 991px y 768px*/
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (orientation:landscape){
+   main{ display:flex;
+    flex-direction: row;}}
+
+@media print{
+  body{
+    background-color: white;
+    color: black;
+  }
+}

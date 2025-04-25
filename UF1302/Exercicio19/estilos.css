@@ -1,0 +1,106 @@
+/* Estilos CSS con Flexbox */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    color: aliceblue;
+
+}
+header {
+    background-color: rgb(172, 135, 13);
+    color:rgb(253, 252, 253);
+    text-align: left;
+    padding: 10px;
+    }
+
+
+/* main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+} */
+.producto{
+    display: flex;
+}
+
+.producto_titular{
+    text-align: center;
+    
+}
+blockquote{
+    text-align: center;
+}
+span{
+    background-color: rgb(250, 246, 27);
+    color:rgb(2, 0, 3);
+    font-weight: 1200;
+    text-align: center;
+}
+
+
+section {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+img{
+    width: 150px;
+    
+}
+.alinear-derecha{
+    float: right;
+    }
+
+video{
+    margin: 20 auto;
+    width: 60%;
+}
+iframe{
+    align:center;
+}
+h2 {
+    color: #cccccc;
+}
+h4{
+    text-align: center;
+}
+footer {
+    background-color: rgb(172, 135, 13);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+iframe {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 10%;
+}
+
+.totop{
+    width: 80px;
+    background: rgb(172, 135, 13);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.totop img{
+    width: 80px;
+}
+figcaption{
+    text-align: center;
+    font-size: 12px;
+}

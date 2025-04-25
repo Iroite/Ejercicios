@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: lightgray;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font: size 16px;
+    ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter-VariableFont.ttf);
+}
+
+body {
+    background-image: url('../assets/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+
+.prin {
+    display: flex;
+    padding: 1rem;
+    width: 28.5rem;
+    height: 40.4375rem;
+    
+
+}
+
+.right {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: #FFF;
+    gap:1rem;   
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+p {
+    color: #202020;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+a {
+    color: #775DA6;
+    text-decoration: none;
+}
+
+.encuadre {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.left {
+    width: 50vw;
+
+}
+
+.left01 {
+    display: flex;
+    flex-direction: row;
+}
+
+.segundo {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 1rem 0rem 1rem 0rem;
+
+}
+
+.tercero {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.cuarto {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.encuadre__left {
+    display: flex;
+    flex-direction: column
+}
+
+.encuadre__right {
+    display: flex;
+    flex-direction: column
+}
+
+.genero {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.grande {
+    width: 50vh;
+}
+
+h1 {
+    color: #202020;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tit {
+    color: #202020;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    width: 25.22069rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: #775DA6;
+
+}
+
+.area {
+    width: 25.22069rem;
+    height: 4.8125rem;
+    flex-shrink: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comenzar {
+    background: #775DA6;
+    color: white;
+
+    border: none;
+}
+#textarea{
+    color: #202020;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.linea-horizontal {
+    border-top: 1px solid #202020;
+    margin: 20px 0;
+}

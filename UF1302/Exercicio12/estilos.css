@@ -1,0 +1,192 @@
+/* Estilos CSS con Flexbox */
+
+@font-face {
+    font-family: ANUDI;
+    src: url(./assets/fonts/ANUDI.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:aliceblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+background-color: #dadada7c;}
+
+header {
+    background-color: #a5a5a5d5;
+    color: #7a7a7a;
+    text-align: center;
+    padding: 0px;
+}
+
+nav {
+    background-color: #dad9d933;
+    color: white;
+    padding: 10px;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #757575;
+}
+
+nav ul li a{
+    color: white;
+}
+div{
+    color: #757575;
+}
+.slider__h2{
+    text-shadow: 1px 1px 3px black;
+    font-family:ANUDI ;
+color: #ffffffc5;}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+   
+    margin: 10px auto;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 20%;
+    a{
+        color: white;
+    }
+    }
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.colorfuente{
+    color: #7a7a7a;
+}
+article {
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+.icon_botones{
+    width: 25%;
+}
+.icono{
+    width: 25px;
+}
+.image{
+    width: 200px;
+    align-self:center;
+    
+}
+.logo{
+width: 64px;    
+align-self: center;
+padding-top: 0%;
+padding-bottom: 0%;
+padding-left: 0%;
+padding-right: 0%;
+margin-top: 0%;
+margin-bottom: 0%;
+margin-left: 0%;
+margin-right: 0%;
+}
+.main__menu{
+display: flex;   
+}
+
+video{
+    width: 400px;
+}
+
+h1 {
+    color:#fffffff5;
+    text-align:center;
+}
+h2 {
+    font-family: ANUDI;
+    src: url(./assets/fonts/ANUDI.ttf);
+    color: #aca9a9f5;
+    text-align: center;
+    
+}
+iframe {
+    width: 60%;
+    height: 60% 
+    display: block;
+    margin: 18%;
+}
+footer {
+    background-color: #adadadd5;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+line-height: 1;
+}
+
+footer a{
+    color: white;
+   
+}
+footer h2{
+    color:#757575
+}
+p {
+        color: #3d3d3d;
+        text-align:center;
+       
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+a {
+   font:font-family: ANUDI;
+   src: url(./assets/fonts/ANUDI.ttf);
+    color: #ffffff;
+
+}

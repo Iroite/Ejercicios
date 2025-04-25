@@ -1,0 +1,77 @@
+* {
+  margin: 2px;
+  padding: 2px;
+  outline: 5px;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+ background:gray;
+ color: white ;
+ -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: nav;
+    src: url(./fonts/enviro.ttf);
+}
+@font-face {
+    font-family: texto;
+    src: url(./fonts/amano.ttf);
+}
+body, input, button {
+ font-size: 14px;
+ font-family:texto;
+}
+
+button {
+ cursor:progress;
+}
+header{
+    background-color:gray;
+    position:sticky;
+    top:0px;
+    left:0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: aliceblue;
+
+}
+nav ul{
+    font-family: nav;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content:center;
+    
+}
+nav ul li{
+    margin: 10;
+}
+nav a{
+    text-decoration: none;
+    color:aliceblue
+}
+.back-to-top{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    color: aliceblue;
+    font-size: 15px;
+
+}
+span{
+    background-color: yellow;
+    color: gray;
+    font-family: nav;
+    font-size: 16px;        
+    font-weight: bold;
+    }
+.header__h1{
+    font-family: nav;
+}

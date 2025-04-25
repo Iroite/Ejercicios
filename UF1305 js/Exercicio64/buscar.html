@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>exercicio 64 Añadir buscar ciudades</title>
+  <link rel="stylesheet" href="./style/bulma.min.css" />
+  <link rel="stylesheet" href="./style/style64.css" />
+</head>
+
+<body class="Buscar">
+  <header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="index.html"class="navbar-item title navbar-item has-text-weight-bold">O Tempo en Galiza</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a class="navbar-item" target="_blank" href="#" onclick="actualizarDatos(42.8660422,-8.541)"> Casa </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.28,-8.87)"> Campara </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.7369066,-7.8737579)"> Cariño </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.06,-5.38)"> San Isidro </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.85,-8.58)"> Polígono Industrial "Novo Milladoiro" </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(65.5866397,22.0999817)"> Bergnäset (Suecia) </a>
+        
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttoms">
+              <a href="buscar.html" class="button is-light">Buscar Cidade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<div class="container">
+  <div class="field mt-3 mx-3">
+    <label class="label">Buscar cidade</label>
+    <div class="control">
+      <input id="city" type="text" class="input" placeholder="Escribe o nome dunha cidade" >
+    </div>
+  </div>  
+  <div class="field mx-3">
+    <div class="control">
+      <button id="botonBuscar" class="button is light">Buscar</button>
+    </div>
+  </div>
+  </div></header>
+  <!-- <div class="control box is-flex is-justify-content-center is-align-items-center">
+    <input id="city" class="input is-large" type="text" placeholder="Insira a cidade"/></div></div> -->
+   <main>
+    <div class="container">
+      
+      <div class="columns is-multiline pt-3 px-3" id="resultado"></div>
+    
+    </div></main>
+  <footer class="footer mt4">
+<p class="footer__p has-text-centered">O Tempo en Galiza- 2025 - Tódos os dereitos reservados</p>
+  </footer>
+  <!-- <script src="./js/script62.js"></script> -->
+  <script src="./js/buscar.js"></script>
+  <script src="./js/navbar.js"></script>
+  <!-- <script src="./js/script62.js"></script> -->
+</body>
+
+</html>

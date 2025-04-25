@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background:  lightgray 0px 0px  ;
+ color:white ;
+ -webkit-font-smoothing: antialiased;
+ /* overflow-y: hidden; */
+}
+
+body, input, button {
+ font-size: 10px;
+ font-family:OpenSans ;
+}
+
+button {
+ cursor: pointer;
+}
+html{
+    font:10px;
+}
+@font-face {
+    font-family:"OpenSans" ;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+    background-image: url(../fondo_Loki.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+   height: 100vh;
+       
+}
+.main__exterior{
+    width: 58rem;
+    height: 39rem;
+    margin-top: 8.5rem;
+    margin-left: 19.9rem;
+
+}
+.main__column{
+    display: flex;
+    flex-direction: column;
+    width: 58rem;
+    height: 50rem;
+}
+.main__logo{
+    width: 58rem;
+}
+.main__info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    /* top: 20.3rem;    */
+}
+#id__loki{
+    width: 34.1rem;
+    height: 19.1rem;
+    left: 0.3rem;
+}
+#edad__info{
+    width: 2.45rem;
+    height: 1.4rem;
+    margin-left: 0rem;    
+    /* margin-top: 20.3rem; */
+}
+#audio__info{
+    width: 2.6rem;
+    height: 1.4rem;
+    margin-left: 0.47rem;
+    /* margin-top: 20.3rem; */
+}
+#subtitle__info{
+    width: 1.96rem;
+    height: 1.4rem;
+    /* margin-top: 20.3rem; */
+    margin-left: 0.41rem;
+}
+p{
+    font-family: "OpenSans";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    }
+#info__text{
+    margin-left: 0.2rem;
+}   
+#info__tema{
+margin-left: 0.5rem;
+letter-spacing: 0.05rem;
+}  
+#info__tema{
+margin-top:0.5rem ;
+margin-left: 0rem;
+
+}
+.sinopsis{
+    width:48rem ;
+    /* margin-right:62.1rem ; */
+    /* height: ; */
+}
+#info__sinopsis{
+    color: #FFF;
+    font-family: "OpenSans";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2.2rem;
+    width: 49rem;
+}
+
+.trailer__buttom{
+    color: #FFF;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    border: #0063E5;
+    background: #0063E5;
+    width: 14rem;
+    height: 3.8rem;
+    flex-shrink: 0;
+    margin-top: 2.2rem;
+    margin-left: 0.1rem;}
+
+.catalogo{
+        display: flex;
+        justify-content: center;
+        gap:1rem;
+        align-items: center;}
+
+#modal{
+        display: none;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%) ;
+        z-index: 99;
+    }
+#pecharModal{
+        background-color: rgb(211, 26, 180);
+        font-size: 2rem;
+        font-weight: 700;
+        color:white;
+        /* overflow: x 350px; */
+        position:absolute; 
+        
+        left: 95%;
+        z-index:99;
+        float:right;
+    
+    }
+#pecharModal:hover{
+        background-color: #0063E5 ;
+        color:#ffef09;
+    }    

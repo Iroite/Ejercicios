@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(231, 247, 255);
+    font-size: 14px;}
+header{
+    text-align: center;
+}
+h1{
+    color:(srgb rgb(0, 0, 255) green blue);
+    font-size: 1.9rem;  
+}
+main{
+    text-align:center;
+/* no aplica pq especificamente hay configurado P y en el li tb tiene configuración específica} */
+li{
+    background-color: #00dbf8;
+    color:rgb(99, 88, 248);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+li:hover{
+        background-color: #0692f0;
+        color: white;    
+}
+footer{
+    border: 2px dotted  blue;
+    /* solid dotted o dashed son posibilidades de formatos de border */
+}
+p{
+    text-align: left;
+}
+/* 
+margin: 1px 1px 1px 1px;
+margin-top: 1px;
+margin-right: 1px;
+margin-bottom: 1px;
+margin-left: 1px;
+
+
+padding
+
+
+border
+ */

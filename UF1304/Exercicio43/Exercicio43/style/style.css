@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: black;
+ color:white;
+ -webkit-font-smoothing: antialiased;
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+}
+@font-face {
+    font-family: notesESA;
+    src: url(./fonts/NotesEsaBol.otf);
+}
+@font-face {
+    font-family: opensans ;
+    src: url(./fonts/OpenSans-VariableFont.ttf);
+}
+:root{
+--color-primary:#003247;
+--color-secundary: #00b19d;
+--font-primary:notesESA;
+--font-secondary: opensans;
+}
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-secondary);
+}
+
+button {
+ cursor: pointer;
+}
+/* estilos do formulario */
+
+/* header */
+.header__nav{
+    background-color: var(--color-primary);
+}
+/* video */
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* main */
+.form{
+    position:absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 49px 54px;
+}
+.form__h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color:var(--color-primary)
+} 
+.form__p{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-primary)
+
+}
+.form__a{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-secundary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.form__label{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color:var(--color-primary);
+    font-weight: 600;
+}
+.form__label span{
+    color:var(--color-secundary);
+}
+.form-control{
+    border-radius: 0px;
+    border:1px solid var(--color-primary)
+}
+.form-check-label{
+    font-family: var(--font-secondary);
+    color:var(--color-primary);
+    font-size: 1rem; 
+    border-radius: 0px;
+}
+.form-check-input:checked{
+    accent-color:var(--color-secondary);
+    background-color:var(--color-)
+}
+.form__button{
+    border: 2px solid var(--color-primary);
+    border-radius: 0px;
+}
+.form__button:hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+/* footer */
+.footer__p{
+    font-family: var(--font-secondary);
+    font-size: 1ren;
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.footer{
+    position:relative;
+    bottom: 20px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 0px 100px 90px 100px;
+}
+/* responsive */
+@media(max-width: 768px){
+    #video{
+        display:none;
+    }
+    .form{
+        position:relative;
+        left:0;
+        top:0;
+        transform: translate(0); 
+        min-height: 100vh; 
+        overflow: hidden; 
+        
+    }
+    .footer__p{
+        color: black;
+    }
+
+}

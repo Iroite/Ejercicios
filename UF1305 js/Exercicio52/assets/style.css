@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+ background: rgb(2, 0, 3);   
+ color: #d6d6d6; ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 12px; ;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+img{
+  width: 100%;
+  height: 1080px;
+  }
+.card{
+    background-color: rgb(2, 0, 3);
+    border-radius: 8px;
+    box-shadow: 1px 2px 20px 5px rgb(230, 229, 229);
+    padding: 10px;
+    margin: 20px;
+    width:  384px;
+    height: 216PX;
+}
+
+.card:hover{
+
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: 5s;
+  font-size: 1.5rem;  
+  /* background-image: url(); POR QUE NECESITA LA DIRECCIOON DE LA FOTO. La propiedad background no afecta en este caso
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color: hsla(0, 0%, 79%, 0.897);
+  background-blend-mode: darken, luminosity;
+  background-size:contain; */
+ 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.container {
+    max-width: 100%;
+    background: rgb(2, 0, 3);
+    border-radius: 8px;
+    box-shadow: 2px 20px 100px rgba(250, 250, 250, 0.1);
+    padding: 15px;
+    margin: 05px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  

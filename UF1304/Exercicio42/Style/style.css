@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: var(--bs-secondary-bg);
+ color:darkblue;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 16px; ;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+#dos{
+    color:var(--bs-secondary-bg-rgb);
+}
+#veo{
+    color:var(--bs-secondary-bg-rgb);
+}
+h1{
+    text-align: center;
+}
+p{
+    padding: 15px;
+    margin: 15px;
+}
+a{
+    padding-bottom: 15px;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    text-align: right;
+}
+btn{
+    
+    background-color: var(--bs-success);}

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="gl" lang="gl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      var djConfig = {
+        parseOnLoad: true,
+        isDebug: false,
+        baseUrl:
+          "https://servizos.meteogalicia.gal/paneis/camaras.action?ids=9999 /datosred/infoweb/meteo/libExternas/Dojo/1.6.0/dojo/",
+        extraLocale: ["gl", "es"],
+      };
+    </script>
+
+    <script type="text/javascript" src="./js/dojo.js"></script>
+    <title>Cámaras - MeteoGalicia</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="Keywords" content="Cámaras web" />
+    <meta
+      name="Description"
+      content="MeteoGalicia, Cámaras web de MeteoGalicia"
+    />
+
+    <link href="./style/index_min.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <script type="text/javascript" src="./js/camaras_min.js"></script>
+
+    <script type="text/javascript">
+      index = 0;
+      var estilos = ["camara",];
+      var parametros = [ "Cariño (Cariño),camara,/datosred/infoweb/clima/webcams/Carinho/ultima.jpg", ];
+      var tempos = [ 12000,];
+
+      elementos = 1;
+      dojo.addOnLoad(init);
+    </script>
+  </head>
+
+  <body id="page-home">
+    <div id="corpo"></div>
+  </body>
+</html>

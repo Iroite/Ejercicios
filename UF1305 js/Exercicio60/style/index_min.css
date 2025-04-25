@@ -1,0 +1,66 @@
+body,
+html {
+    color: #fff;
+    background-color: #000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center
+}
+
+#corpo {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: inline;
+    vertical-align: middle;
+    text-align: center
+}
+
+.titulo {
+    color: #ff9;
+    font-size: 2em
+}
+
+table {
+    width: 100%;
+    text-align: center
+}
+
+img.sat {
+    height: 100%
+}
+
+img.radar {
+    padding-top: 4%;
+    height: 84%
+}
+
+span.amarelo {
+    color: #ff9;
+    font-weight: 400
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center
+}
+
+img.camara {
+    height: 85%
+}
+
+.pePaxina {
+    padding: 5px 0 0;
+    margin: 5px 10px 0 0
+}
+
+img.logo1 {
+    margin-right: 15px
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 58</title>
+    <link rel="stylesheet" href="./style/style.exercicio58.css">
+</head>
+<body>
+    
+    <header><nav class="nav__menu">
+        <div class="header"><div class="logo"><img src="./assets/img/logo_scorpions.png" alt="Logo Scorpions"></div>
+        <div class="menu">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Tourdates</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Rockzone</a></li>
+            <li><a href="#">Guestbook</a></li>
+            <li><a href="#">Discography</a></li>
+            <li><a href="#">Band</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul></div></div>
+    </nav>
+</header>
+<main>
+
+<div class="discography__title">
+    <img src="./assets/img/ruffle_black_bottom.png" alt="" class="bottom" id="bottom">   
+
+ 
+<h1 class="discography__h1">
+    DISCOGRAPHY
+</h1>
+<img src="./assets/img/ruffle_black_top.png" alt="" class="top" id="top">
+
+</div>
+<div class="caixa">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all" onclick="showAll()">Todos</button>
+            <button class="filter-btn" data-filter="Albums" onclick="createAlbumElement()">Albums</button>
+            <button class="filter-btn" data-filter="Compilation" onclick="showCompilations()">Compilacions</button>
+            <button class="filter-btn" data-filter="dvd" onclick="showDvd()">DVD/Blu-ray</button>        
+        </div>
+        <div class="album-item category">
+        <div class="gallery-container" id="gallery">
+            <img src="" alt="">
+            <p></p>
+            <!-- As portadas mostraranse aquí e serán contruídas dende Javasdript -->
+        </div></div>
+        
+    </main>
+    <footer></footer>
+    <script src="./js/script.ejercicio58.js"></script>
+</body>
+</html>

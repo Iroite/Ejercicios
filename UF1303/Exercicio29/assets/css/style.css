@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: gray;
+ color: aliceblue;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 12px; ;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+img{
+    width: 40%;
+}
+nav {
+    background-color: #33333304;
+    color: white;
+    padding: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;/*por aquí anda la característica de poner el menu en horizontal*/
+    justify-content: right;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+.container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(40, 17, 210);
+display:flex;
+flex-wrap: nowrap;
+margin: 2px;
+padding: 10px;
+}
+.container div{
+    width: 250px;
+    height: 200px;
+}
+.tarxeta{
+background-color: rgba(127, 255, 251, 0.903);
+border-radius: 10px;
+box-shadow: 5px 5px 20px 2px rgb(221, 219, 219);
+padding: 5px;
+margin: 10px;
+flex-direction: column;
+/* border: 2px double red;  alternativa a border*/
+border-style: double;
+border-width: thick;
+border-color: black;
+color: blue;
+display: flex;
+}
+.tarxeta:hover{
+    background-image: url();
+    background-position:right;
+    background-position:center;
+    background-repeat: repeat-x;
+    background-color: hsla(342, 100%, 50%, 0.693);
+    background-blend-mode: darken, luminosity;
+    background-size:contain;
+    width: 500px;
+    height: 400px;
+    transform: 1.25;
+    transition: 5s;
+    color:rgb(3, 0, 2);
+    font-size: 1.5rem;  
+}
+@media screen and (max-width:1023px) {
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: none;
+    align-items: center;
+    padding-top: 20px;
+    }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.tarxeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  }

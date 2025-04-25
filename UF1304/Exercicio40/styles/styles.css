@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+
+body, input, button {
+ font-size:12px ;
+ font-family: Verdana, Geneva, Tahoma, sans-serif ;
+ 
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: Plus Jakarta Sans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+body {
+    height: 120vh;
+    background-image: url('../assets/fondo.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top; 
+    background-color: lightgray 50% ;
+    /* background: url(url('../assets/fondo.png')) lightgray 50% / cover no-repeat; */
+}
+.cabezera{
+margin:0px;
+/* padding: 10px 1350px 0px 15px; */
+border: 0px;
+background-color: white;
+}
+
+.header__ul{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 24px;
+    text-align: center;
+    
+    .logo{
+        width: 134.142px;
+        height: 29.248px;
+        flex-shrink: 0;
+        border: 28.2px 1185px 2.5px 121px;
+
+       
+    }
+    
+    .log{
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.28px;
+        padding: 12px;
+        a{
+            color: #050B32;
+            list-style: none;
+            text-decoration: none;}
+        }
+    .sign{
+        
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        border: 0px;
+        margin: 0px;
+        padding: 12px;
+        font-weight: 600;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.28px;
+        width: 120px;
+        height: 44px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #0060F0;
+        box-shadow: 0px 12px 20px 0px rgba(78, 111, 158, 0.20);
+    a{
+        color: #FFF;
+        list-style: none;
+        text-decoration: none;
+
+    }}
+ 
+}
+
+h4{
+    color: #050B32;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 141.667% */ 
+
+}
+p{
+    color: #576D99;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.26px;
+}
+sup{
+    color: red;
+}
+header{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul{
+    gap: 38px;
+    list-style-type: none;
+    margin:10px;
+    padding: 10px;
+    color: white ;
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* margin: 60px 40%; */
+    padding: 32px 40px;
+    align-items: center;
+    
+    border-radius: 15px;
+    border: 1px solid #2666ED;
+    background: #FFF;
+    width: 550px;
+    height: 598px;
+}
+.txt__h4__icon{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 45px;
+    height: 65px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form__flex{
+    border-radius: 10px;
+    border: 1px solid #D2DAE2;
+    background: #FFF;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    margin: 8px;
+    
+    color: #576D99;
+    font-family: "Plus Jakarta Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 169.231% */
+    letter-spacing: 0.26px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap:20px;
+    width:100% ;
+    margin: 8px;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    margin: 8px; 
+    background-color: white;
+    padding-bottom: 2px;
+    gap:20px;
+    width:225px ;
+    height: 100%;
+}
+
+.first1{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* width: 450px; */
+    gap: Xpx;
+    
+    
+    
+}
+#mail{   
+    padding:10px;
+    width:450px ;
+    height: 46px;
+    gap: 32px;
+
+}
+.submit{
+    display: flex;
+    flex-flow: initial;
+    align-content: center;
+    padding: 13px 64px;
+    margin: 32px;
+    border-radius: 10px;
+    border: 1px solid #0055FE;
+    background: #FFF;
+    
+    
+}
+.texto__boton{
+    color: #0055FE;
+    font-family: "Plus Jakarta Sans";
+    background-color:white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border: 0px;
+    
+    line-height: 24px; /* 150% */
+}

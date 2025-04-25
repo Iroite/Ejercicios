@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;}
+
+
+
+  body {
+ background:url(../assets/img/fondo.jpg), #100203 ;
+ color: white ;
+ -webkit-font-smoothing: antialiased;
+}
+body, input, button {
+ 
+    font-size: 10px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: Franchise;
+    src: url(../font/Franchise-Bold-hinted.ttf);
+}
+
+.nav__menu{
+    display: flex;
+    background-color: #100203;
+}
+
+
+.header{
+    display: flex;
+   justify-content: space-between;
+}
+.logo{
+    margin-top: 2.1rem;
+    margin-left: 3.9rem;
+   
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    margin-left: 40rem;
+    
+}
+a:active{
+    color:red;
+}
+ul{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+ul li{
+    list-style: none;
+       
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Franchise;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#top{
+    /* height: 100vh;
+    object-fit: none;
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 120vw;
+    z-index: -2; */
+width: 100%;
+}
+#fondo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: none;
+    position: absolute;
+    top: 100;
+    left: 0;
+    z-index: -3;
+}
+
+.discography__title{
+height: 27rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.discography__h1{
+color: #FFF;
+text-shadow: 0px 8px 0px #100203;
+font-family: Franchise;
+font-size: 131px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.8px;}
+
+#bottom{
+    /* width: 100vw;
+    height: 100vh;
+    object-fit: none;
+    position:relative;
+    top:99%;
+    bottom: 1%;
+    left: 0;
+    z-index: -1; */
+}
+.caixa{
+    background-color: #100203;
+}
+
+.filter-btn{
+    margin-left: 3%;
+    text-align: center;
+    background-color: #100203;
+    width: 10rem ;
+    height: 2.5rem;
+        color: #FFF;
+        font-family: Franchise;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.11px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+}
+.active{
+    background-color:#AD2D2D;
+    margin-left: 20rem;
+}

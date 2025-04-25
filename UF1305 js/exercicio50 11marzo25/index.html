@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style/style-ejercicio50.css">
+</head>
+<body>
+    <header>
+        <div id="calculator"><p class="marca"> Stellae</p>
+            <input type="text" id="display" readonly><br>
+            <!--botóns numericos e de operadores 4x4-->
+           <div class="body__header__row1">
+            <button class="digit" onclick="appendCharacter('1')">1</button>
+            <button class="digit" onclick="appendCharacter('2')">2</button>
+            <button class="digit" onclick="appendCharacter('3')">3</button>
+            <button class="digit" onclick="appendCharacter('4')">4</button></div>
+            <div class="body__header__row2">
+            <button class="digit" onclick="appendCharacter('5')">5</button>
+            <button class="digit" onclick="appendCharacter('6')">6</button>
+            <button class="digit" onclick="appendCharacter('7')">7</button>
+            <button class="digit" onclick="appendCharacter('8')">8</button></div>
+            <div class="body__header__row3">
+            <button class="digit" onclick="appendCharacter('9')">9</button>
+            <button class="digit" onclick="appendCharacter('0')">0</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
+            <button class="operator" onclick="setOperator('-')">-</button></div>
+            <div class="body__header__row4">
+            <button class="operator" onclick="setOperator('*')">x</button>
+            <button class="operator" onclick="setOperator('/')">/</button>
+            <button class="equals" onclick="calculate()">=</button>
+            <button class="equals" id="clear" onclick="clearDisplay()">C</button></div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./js/ejercicio50.js"></script>
+</body>
+</html>

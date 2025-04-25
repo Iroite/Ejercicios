@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   background:white;
+   color: black ;
+   -webkit-font-smoothing: antialiased;
+  }
+  
+  body, input, button {
+   font-size: 20px;
+   font-family:bonbon ;
+  }
+  
+  button {
+   cursor: pointer;
+
+  }
+  @font-face {
+    font-family: kanit;
+    src: url(./fonts/Kanit-Light.ttf);
+  }
+  @font-face {
+      font-family:bonbon;
+      src: url(./fonts/Bonbon-Regular.ttf);
+  }
+  #calculator{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 20rem;
+      height: 30rem;
+      border: 0.1rem solid rgb(155, 231, 12);
+
+      margin-left: 30%;
+      margin-top: 10%;
+      padding-left: 1rem;
+      padding-bottom: 0.5rem;
+      background-color: rgb(2, 0, 3);
+      box-shadow:  -5px -5px aquamarine;
+      border-radius: 0.3rem;
+  }
+  .body__header__row1{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .body__header__row2{
+      display: flex;
+      justify-content: space-around;
+  }
+  .body__header__row3{
+      display: flex;
+      justify-content: space-around;
+  }
+  .body__header__row4{
+      display: flex;
+      justify-content: space-around;
+      
+  }
+  .marca{
+      display: flex;
+      flex-direction: column;
+      font-family: kanit;
+      font-weight: 900;
+      padding-right: 0.5rem;
+      margin-top: 0.5rem;
+      align-items: space-around;
+      color:aqua;
+      text-shadow: 1px 1px 5px rgb(10, 10, 9);
+      }
+  .digit{
+      margin-top: 0.5rem;
+      height: 2.2rem;
+      width: 2.2rem;
+      font-family: arial;
+      font-size: 1rem;
+      font-weight: 700;}
+  .operator{
+      height: 2.2rem;
+      width: 2.2rem;
+      font-family: arial;
+      font-size: 1rem;
+      font-weight: 700;
+  }
+  .equals{
+      height: 2.2rem;
+      width: 2.2rem;
+      font-family: arial;
+      font-size: 1rem;
+      font-weight: 700;
+  }
+  #display{
+      height: 2.2rem;
+      color:aqua;
+      width: 17rem;
+      border-radius: 0.5rem;
+      font-family: arial;
+      font-size: 1rem;
+      padding: 1rem;
+      margin: 1rem 0.1rem;
+      
+      border: 1px solid aqua;
+      background-color: rgb(60, 19, 100);
+  }
+  
+  /* #display::placeholder{
+      color: white;
+      
+  } */
+  .picture{
+      padding-top: 0.1rem;
+      padding-bottom: 0.3rem;
+      height: 2.5rem;
+      width: 17rem;
+      border-radius: 1rem 0.25rem 0.25rem 0.25rem;
+  }
+
+  .key{
+    height: 4rem;
+    width:  4rem;
+    color:aqua;
+    background-color: black;
+    border-bottom: 1rem 0px 0px 1rem solid aqua;
+  }

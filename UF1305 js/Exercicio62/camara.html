@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="gl" lang="gl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      var djConfig = {
+        parseOnLoad: true,
+        isDebug: false,
+        baseUrl:
+          "https://servizos.meteogalicia.gal/paneis/camaras.action?ids=9999 /datosred/infoweb/meteo/libExternas/Dojo/1.6.0/dojo/",
+        extraLocale: ["gl", "es"],
+      };
+    </script>
+
+    <script type="text/javascript" src="./js/dojo.js"></script>
+    <title>Cámaras - MeteoGalicia</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="Keywords" content="Cámaras web" />
+    <meta
+      name="Description"
+      content="MeteoGalicia, Cámaras web de MeteoGalicia"
+    />
+
+    <link
+      href="./style/index_min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+
+    <script type="text/javascript" src="./js/camaras_min.js"></script>
+
+    <script type="text/javascript">
+      index = 0;
+      var estilos = [
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+        "camara",
+      ];
+      var parametros = [
+        "Ríotorto (Riotorto),camara,/datosred/infoweb/clima/webcams/Riotorto/ultima.jpg",
+        "Penedo do Galo (Viveiro),camara,/datosred/infoweb/clima/webcams/Penedodogalo/ultima.jpg",
+        "Camariñas (Camariñas),camara,/datosred/infoweb/clima/webcams/Camarinhas/ultima.jpg",
+        "Cospeito (Cospeito),camara,/datosred/infoweb/clima/webcams/Cospeito/ultima.jpg",
+        "Baiona (Baiona),camara,/datosred/infoweb/clima/webcams/Baiona/ultima.jpg",
+        "San Lázaro (Santiago de Compostela),camara,/datosred/infoweb/clima/webcams/Santiago/ultima.jpg",
+        "Punta Candieira (Cedeira),camara,/datosred/infoweb/clima/webcams/PuntaCandieira/ultima.jpg",
+        "Cabo do Mundo (O Saviñao),camara,/datosred/infoweb/clima/webcams/Cabodomundo/ultima.jpg",
+        "Cristosende (A Teixeira),camara,/datosred/infoweb/clima/webcams/Cristosende/ultima.jpg",
+        "Corón (Vilanova de Arousa),camara,/datosred/infoweb/clima/webcams/Coron/ultima.jpg",
+        "Alto do Rodicio (Maceda),camara,/datosred/infoweb/clima/webcams/Rodicio/ultima.jpg",
+        "Monforte (Monforte de Lemos),camara,/datosred/infoweb/clima/webcams/Monforte/ultima.jpg",
+        "O Cebreiro (Pedrafita do Cebreiro),camara,/datosred/infoweb/clima/webcams/Cebreiro/ultima.jpg",
+        "Xesteiras (Cuntis),camara,/datosred/infoweb/clima/webcams/Radar/ultima.jpg",
+        "Cariño (Cariño),camara,/datosred/infoweb/clima/webcams/Carinho/ultima.jpg",
+        "Cíes-Rodas (Vigo),camara,/datosred/infoweb/clima/webcams/Ciesrodas/ultima.jpg",
+        "Sálvora (Ribeira),camara,/datosred/infoweb/clima/webcams/Salvora/ultima.jpg",
+        "Cangas (Cangas),camara,/datosred/infoweb/clima/webcams/Cangas/ultima.jpg",
+        "Cíes-Faro-Norte (Vigo),camara,/datosred/infoweb/clima/webcams/CiesFaroNorte/ultima.jpg",
+        "Lardeira (Carballeda de Valdeorras),camara,/datosred/infoweb/clima/webcams/Lardeira/ultima.jpg",
+        "Ons Porto (Bueu),camara,/datosred/infoweb/clima/webcams/Onspuerto/ultima.jpg",
+        "Portosín (Porto do Son),camara,/datosred/infoweb/clima/webcams/Portosin/ultima.jpg",
+        "Aguete (Marín),camara,/datosred/infoweb/clima/webcams/Aguete2/ultima.jpg",
+        "Aldea Nova (Narón),camara,/datosred/infoweb/clima/webcams/AldeaNova/ultima.jpg",
+        "Castrove (Poio),camara,/datosred/infoweb/clima/webcams/Castrove/ultima.jpg",
+        "Ribadeo (Ribadeo),camara,/datosred/infoweb/clima/webcams/Ribadeoporto/ultima.jpg",
+        "Burela (Burela),camara,/datosred/infoweb/clima/webcams/Burela/ultima.jpg",
+        "Coruña-Dique (A Coruña),camara,/datosred/infoweb/clima/webcams/Corunha/ultima.jpg",
+        "Ancares (Cervantes),camara,/datosred/infoweb/clima/webcams/Ancares/ultima.jpg",
+        "Coruña-Langosteira (Arteixo),camara,/datosred/infoweb/clima/webcams/Langosteira/ultima.jpg",
+        "Corrubedo (Ribeira),camara,/datosred/infoweb/clima/webcams/Corrubedo/ultima.jpg",
+        "Fontaneira (Baleira),camara,/datosred/infoweb/clima/webcams/Fontaneira/ultima.jpg",
+      ];
+      var tempos = [
+        12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000,
+        12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000,
+        12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000, 12000,
+        12000, 12000,
+      ];
+
+      elementos = 32;
+      dojo.addOnLoad(init);
+    </script>
+  </head>
+
+  <body id="page-home">
+    <div id="corpo"></div>
+  </body>
+</html>

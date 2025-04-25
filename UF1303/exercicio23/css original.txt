@@ -1,0 +1,18 @@
+@font-face{
+    font-family:principal;
+    scr: url(./assets/fonts/Jersey15-Regular.ttf)
+}
+.texto{
+    color:blue;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px gray;
+}
+
+header{
+    font-family:body;
+}

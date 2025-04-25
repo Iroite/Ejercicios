@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="gal">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+ <header><marquee behavior="20s" direction="left">Formulario</marquee></header>   
+ <h1 class="texto">Rechea a enquisa</h1>
+ <main>
+    <form action="">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Introduza Nome completo" required><br>
+ 
+<label for="mail">Correo electrónico</label>
+<input type="mail" id="mail" placeholder="introduza o seu mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br>
+
+
+<label for="contrasinal">Contrasinal</label>
+<input type="password" id="contrasinal" placeholder="Introduza Contrasinal" name="contrasinal" required><br>
+
+
+<label for="telefono">Número de teléfono</label>
+<input type="tel" id="tlf" placeholder="Teléfono" name="telefono" pattern="[0-9]{9}" required><br>
+
+
+<label for="pais"><h4>País</h4></label>
+<select id="pais" name="pais" required>
+    <option value="">Seleccionar</option>
+    <option value="ue">Unión Europea</option>
+    <option value="usa">Estados Unidos</option>
+    <option value="gb">Reino Unido de la Gran Bretaña</option>
+</select><br>
+<div>
+    <label for="sexo"><h4>Xénero</h4></label>
+<div>
+    <input type="radio" id="xenerof" name="femenino" value="F">
+    <label for="femenino">Femenino</label>
+</div>
+<div>
+    <input type="radio" id="xenerom" name="masculino" value="M">
+    <label for="masculino">Masculino</label>
+</div>
+<div>
+    <input type="radio" id="xenerot" name="Otros" value="T">
+    <label for="Otros">Otros</label>
+</div>
+</div>
+
+<div>
+    <label for="intereses"><h4>Intereses</h4></label>
+    <div><input type="checkbox" id="intereses" name="intereses" value="dxt">
+    <label for="deporte">Deporte</label></div>
+
+    <div class=""><input type="checkbox" id="intereses01" name="intereses01" value="Msk">
+        <label for="musica">Música</label></div>
+    <div><input type="checkbox" id="intereses02" name="intereses02" value="vxs">
+        <label for="viaxes">Viaxes</label></div>
+    <div><input type="checkbox" id="intereses03" name="intereses03" value="Tech">
+        <label for="tecnoloxia">tecnoloxía</label></div> 
+    <div><input type="checkbox" id="intereses04" name="intereses04" value="cine">
+        <label for="cine">Cine</label></div>  
+    <div><input type="checkbox" id="intereses05" name="intereses05" value="book">
+        <label for="lectura">Lectura</label></div>                 
+    <div><input type="checkbox" id="intereses06" name="intereses06" value="otros">
+        <label for="otros">Outros</label></div>            
+</div>
+
+<div><input type="submit" value="Enviar formulario"></div>
+
+</form></main>
+ <aside></aside>
+ <footer>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste aliquid eligendi neque ullam deserunt!</p>
+    <img class="centrar" src="./assets/images/todos.png" alt="Todos los derechos reservados"></footer>
+</body>
+
+</html>

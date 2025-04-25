@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 54</title>
+    <link rel="stylesheet" href="./style/style.ejercicio54.css">
+</head>
+<body>
+<header>
+    <div class="header">
+    <img class="header__titulo" src="./assets/SonsdeAnimais.png" alt="Sons de animais">
+    <p class="header__p">Fai clic no botón do animal para escoitar o seu son</p></div>
+</header>
+
+<main>
+    <div class="animal">
+
+        <div class="gato">
+               <button class="boton" onclick="reproducirSon('./assets/audio/gato.mp3')"> 
+                <img src="./assets/img/gato.webp" alt="Gato">
+                <p class="boton__p">Gato</p> </button>
+            </div>
+
+        <div class="can">
+            <button class="boton" onclick="reproducirSon('./assets/audio/can.mp3')">
+            <img src="./assets/img/can.webp" alt="Can">
+            <p class="boton__p">Can</p></button>
+    </div>
+    
+        <div class="leon">
+            <button class="boton" onclick="reproducirSon('./assets/audio/leon.mp3')">
+            <img src="./assets/img/leon.webp" alt="León">
+            <p class="boton__p">León</p></button>
+        </div>
+
+        <div class="cabalo">
+            <button class="boton" onclick="reproducirSon('./assets/audio/cabalo.mp3')">
+            <img src="./assets/img/cabalo.webp" alt="Cabalo">
+            <p class="boton__p">Cabalo</p></button>
+        </div>
+
+        <div class="vaca">
+            <button class="boton" onclick="reproducirSon('./assets/audio/vaca.mp3')">
+            <img src="./assets/img/vaca.webp"  alt="Vaca">
+            <p class="boton__p">Vaca</p></button>
+        </div>
+        <div class="cabuxa">
+           <button class="boton" onclick="reproducirSon('./assets/audio/cabuxa.mp3')">
+            <img src="./assets/img/cabuxa.webp" alt="Cabuxa">
+            <p class="boton__p">Cabuxa</p></button>
+        </div>
+
+        <div class="hipopotamo">
+            <button class="boton" onclick="reproducirSon('Hipopótamo')">
+            <img src="./assets/img/hipopotamo.webp" alt="Hipopótamo">
+            <p class="boton__p">Hipopótamo</p></button>
+        </div>
+
+        <div class="pinguino">
+            <button class="boton" onclick="reproducirSon('Pinguino')">
+            <img id="son__pinguino" src="./assets/img/pinguin.webp" alt="Pinguino">
+            <p class="boton__p">Pinguino</p></button>
+        </div>
+</div>
+</main>
+<footer></footer>
+
+    
+<script src="./js/script.js"></script></body>
+</html>

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(252, 249, 249);
+ color: rgb(70, 69, 69) ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font: size 16px; ;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+.boton{
+    font-weight: 600;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    margin: 2rem;
+}
+    
+.body__h1{
+    background-color: darkblue;
+    color:white;
+    text-align: center;   
+    margin: 2rem 10rem 0rem 10rem;
+    padding-left: rem;
+    border-top: 3px solid lightblue;
+    border-right: 3px solid lightblue;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.nome{
+    color:aliceblue;
+    text-align: center;
+    padding: 0.5rem;
+}
+.body__main__grande{
+    display: flex;
+    background-color: grey;
+    margin: 0rem 10rem 2rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.body_main__label{
+    color:lightgrey;
+    font-weight: 600;
+    height: 2rem;
+    padding-top: 0.5rem;
+}
+
+.body__main__input{
+    border-radius: 0.25rem;
+    
+}
+.body__main__boton{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.body__main__resultados{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;}

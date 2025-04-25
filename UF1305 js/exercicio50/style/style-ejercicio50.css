@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: silver;
+ color: black ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 20px;
+ font-family:bonbon ;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family:bonbon;
+    src: url(./fonts/Bonbon-Regular.ttf);
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 12rem;
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    
+    box-shadow:  9px 5px rgb(50, 50, 50);
+    border-radius: 0.3rem;
+}
+.body__header__row1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body__header__row2{
+    display: flex;
+    justify-content: space-around;
+}
+.body__header__row3{
+    display: flex;
+    justify-content: space-around;
+}
+.body__header__row4{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.marca{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    
+}
+.digit{
+    margin-top: 0.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.operator{
+    height: 2.2rem;
+    width: 2.2rem;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+.equals{
+    height: 2.2rem;
+    width: 2.2rem;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+#display{
+    height: 2.2rem;
+    width: 10rem;
+    text-align: end;
+    font-family: arial;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid black;
+    background-color: rgb(243, 240, 245);
+}
+.picture{
+    padding-top: 0.51rem;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+}

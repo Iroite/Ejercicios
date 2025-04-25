@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(246, 248, 250);
+}
+.caixa{
+ text-align: center;
+ width: 150px;
+ height: 20px    
+ color:aliceblue;  
+ border-color: black;
+ padding: 10px;
+ margin: 10px;
+}
+
+.azul{
+    background-color: blue;
+}
+.vermella{
+    background-color: red;
+}
+.amarelo{
+    background-color: yellow;
+    color:rgb(35, 32, 228);    
+}
+
+.underline{
+    text-decoration: 4px underline wavy rgb(105, 245, 117);
+}
+.around{
+    border-radius: 10px;
+}
+.caixa:hover{
+    background-color: #03fc03;
+}

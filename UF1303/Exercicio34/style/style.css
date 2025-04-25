@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden; /* esta configuración evita la aparición de las barras de desplazamiento */
+}
+body {
+  background: gray;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: 10;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+body {
+  background: url(../assets/entroido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.caixa {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: desprazamento 9s infinite linear;
+}
+.caixa img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes desprazamento {
+  0% {
+    left: 0;
+    top: 50vh;
+    opacity: 80%;
+  }
+  50% {
+    left: calc(100% - 600px); /*requiere los espacios entre guión*/
+    scale: 8;
+    rotate: -720deg;
+    opacity: 20%;
+  }
+  100% {
+    left: 0;
+    top: 50vh;
+    opacity: 85%;
+  }
+}
+.izq{
+    position: absolute;
+    animation: desprazamento1  2s infinite linear;
+    animation: opacidad;
+  }
+.drcha{
+  position:relative;
+  animation: desprazamento1 2 infinite linear;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: desprazamento1 10s infinite linear;
+  
+}
+.caja img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes desprazamento1 {
+  0% {
+    left: 100%;
+    top: 50%;
+    
+  }
+  33% {
+    left: 50%;
+    scale: 1.2em;
+    top: 60%;
+   
+  }
+  50% {
+    left: 25%;
+    scale: 1.3em;
+    top: 65%;
+   
+  }
+  66% {
+    left: -110%;
+    scale: 1.4;
+    top: 30%;
+    
+  }
+  70%{
+    left:10%;
+    scale:1.2;
+    top:40%;
+  }
+  100% {
+    left: 100%;
+    top: 10%;
+    
+}
+}
+
+/* .caja {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: desprazamento2 20s infinite linear;
+  }
+@keyframes desprazamento2 {
+  0% {
+    left: 100%;
+    top: 40%;
+    
+  }
+  33% {
+    left: 50%;
+    scale: 1.2em;
+    top: 60%;
+    
+  }
+  50% {
+    left: 20%;
+    scale: 1.3em;
+    top: 50vh;
+    
+  }
+  60% {
+    left: 10%;
+    scale: 1.4;
+    top: 70%;
+    
+  }
+
+  100% {
+    left: 100%;
+    top: 10vh;
+    
+  }
+} */
+@keyframes opacity{
+0%{
+  opacity: 1;
+  }
+25%{
+  opacity: 1;
+
+}
+45%{
+  opacity:0.9;
+}
+49%{
+  opacity: 0;
+}
+100%{
+  opacity: 0;
+}}

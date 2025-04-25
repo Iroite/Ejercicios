@@ -1,0 +1,245 @@
+/* Estilos CSS con Flexbox */
+
+@font-face {
+    font-family: texto;
+    src: url(./assets/font/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: face;
+    src: url(./assets/font/Jersey15-Regular.ttf);
+}
+
+body {
+    font-family: texto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+header {
+    background-color: #000;
+    color: #fdf9f9;
+    text-align: center;
+    padding: 0px;
+}
+figcaption{
+    font-family: face;
+}
+nav {
+    background-color: #000;
+    color: rgb(253, 96, 96);
+    padding: 10px;
+
+}
+
+ nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+nav ul li a {
+    color: rgb(223, 223, 223);
+}
+
+div {
+    color: white;
+}
+
+.slider__h2 {
+    text-shadow: 2px 2px 6px #030303;
+    font-family: texto;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+
+}
+
+
+aside a {
+    color: rgb(71, 71, 71);
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 20px;
+}
+
+aside dl {
+    color: #a10202;
+    font-family: face;
+    margin-left: 20px;
+}
+
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.dos{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+}
+.colorfuente {
+    color: #3d3d3d;
+}
+.dos li a{
+    font-family: face;
+}
+article {
+    margin-bottom: 10px;
+}
+
+article  p{
+    font-family: face;
+    color: #3d3d3d;
+}
+
+img {
+    width: 300px;
+}
+.cabecera{
+    width: 100%; ;
+}
+.icon_botones {
+    width: 40%;
+}
+
+.icono {
+    width: 70px;
+}
+
+.image {
+    width: 200px;
+    align-self: center;
+
+}
+
+.logo {
+    width: 165px;
+    align-self: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.main__menu {
+    display: flex;
+}
+
+.dos a{
+    color: #8d8888;
+}
+.ter a{
+    color: #8d8888;
+}
+video {
+    width: 400px;
+}
+
+h1 {
+   font-family: texto;
+    color: #050505f5;
+    text-align: center;
+}
+
+h2 {
+    font-family: texto;
+    color: #7e7c7c;
+    text-align: center;
+
+}
+
+h3 {
+    color: white;
+    text-align: Center;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    line-height: 1;
+}
+
+footer a {
+    font-family: texto;
+    color: white;
+
+}
+
+footer h2 {
+    color: #b1b1b1
+}
+span {
+    background-color: rgb(250, 246, 27);
+    color:rgb(2, 0, 3);
+    font-weight: 800;
+}
+p {
+    font-family: face;
+    color: #afadad;
+
+    text-align: center;
+
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-size:10px;
+}
+
+body {
+ background: white;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:10px;
+ font-family: tahoma ;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(../fonts/Helvetica-Bold.ttf);
+}
+.nav__menu{
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    align-items: center;
+    
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6.5rem;
+    padding: 0rem 2.4rem;
+
+}
+.header__logo{
+    width: 20.5rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+   
+}
+.header__ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:4rem;
+    }
+
+.header__registro{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap:2.5rem;
+}
+.registro__login{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.fuente{
+    text-decoration: none;
+    color: #080808;
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main__h6{
+    background-color: black;
+    width: 100vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 18px 0px;
+}
+
+
+.main__oferta{
+    
+}
+
+
+
+
+
+.main__pie{
+    color: #616161;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

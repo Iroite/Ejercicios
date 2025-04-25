@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercicio 59</title>
+  <link rel="stylesheet" href="./style/ejercicio59.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav__menu">
+      <div class="header__nav">
+        <div class="header__logo">
+          <img src="./assets/img/volvo-logo.svg" alt="" />
+        </div>
+        <div class="header__menu">
+          <ul class="header__ul">
+            <li><a class="fuente" href="#">Nuestros vehículos</a></li>
+            <li><a class="fuente" href="#">Busca y configura</a></li>
+            <li><a class="fuente" href="#">Nuestros clientes</a></li>
+            <li><a class="fuente" href="#">Quienes somos</a></li>
+          </ul>
+        </div>
+        <div class="header__registro">
+          <div class="registro__login">
+            <img src="./assets/img/icon-login.svg" alt="Iniciar Sesión" />
+            <a class="fuente" href="#"> Iniciar Sesión</a>
+          </div>
+          <div class="registro__buscar">
+            <img src="./assets/img/icon-search.svg" alt="Buscar" />
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main">
+      <div class="main__h6">
+        <h6 class="main__top">
+          Ahora con Premium Edition desde 28.400€ con wallbox e instalación
+          incluída
+        </h6><a class="main__oferta" href="#">VER OFERTA ></a>
+      </div>
+
+    </div>
+    <div class="main__principal">
+      <div class="main__superior">
+        <div class="superior__imagen">
+          <div class="gallery">
+            <img class="fade" id="car" src="./assets/img/color_cars_img/negro.avif" alt="" width="1270">
+          </div>
+          <div class="container">
+            <button class="header__button" id="boton__azul" onclick="mostrarCoche('azul')">
+                <img id="carAzul" src="./assets/img/colors_btn/color_azul.svg" alt=""> 
+                    </button>
+            <button class="header__button" id="boton__branco" onclick="mostrarCoche('branco')">
+                <img id="carBranco" src="./assets/img/colors_btn/color_branco.svg" alt="">
+                    </button>
+            <button class="header__button" id="boton__negro" onclick="mostrarCoche('negro')">
+                <img id="carNegro" src="./assets/img/colors_btn/color_negro.svg" alt="">
+                    </button>
+            <button class="header__button" id="boton__grisoscuro" onclick="mostrarCoche('gris')">
+                <img id="carGris" src="./assets/img/colors_btn/color_grisoscuro.svg" alt="">
+                    </button>
+            <button class="header__button" id="boton__amarelo" onclick="mostrarCoche('amarelo')">
+              <img id="carAmarelo" src="./assets/img/colors_btn/color_amarelo.svg" alt="">
+          </button></div></div>
+          <!-- <div class="container">
+            <div class="tarxeta" id="azul">
+              <img class="image" src="./assets/img/color_cars_img/azul.avif" alt="">
+            </div>
+            <div class="tarxeta" id="branco">
+                <img class="image" src="./assets/img/color_cars_img/branco.avif" alt="">
+            </div>
+            <div class="tarxeta" id="negro">
+              <img class="image" src="./assets/img/color_cars_img/negro.avif" alt="">
+          </div>
+          <div class="tarxeta" id="grisoscuro">
+            <img class="image" src="./assets/img/color_cars_img/grisoscuro.avif" alt="">
+        </div>
+        <div class="tarxeta" id="amarelo">
+          <img class="image" src="./assets/img/color_cars_img/amarelo.avif" alt="">
+        </div>  -->
+        
+        
+          <div class="superior__info">
+          <div class="info__left">
+            <div class="left__sup">
+              <h4 class="ex30">EX30.</h4>
+              <p class="pex30">Descubre nuestro SUV más compacto. Un gran rendimiento en un paquete compacto.</p>
+            </div>
+            <div class="left__center">
+              <p class="center__p">En Volvo te garantizamos la fecha de entrega prevista de tu vehículo, proporcionándote – en caso de
+                cualquier contratiempo- un Volvo de gama similar y durante el tiempo que transcurriera hasta la entrega,
+                sin ningún coste para ti. Consulta en tu concesionario.</p>
+            </div>
+            <div class="left__bottom">
+              <h2 class="botton__h2">COMPRA DESDE 39.050€</h2>
+            </div>
+          </div>
+          <div class="info__right">
+            <div class="right__01">
+              <h1 class="km">476 km</h1><br>
+              <p class="p__km">Autonomía eléctrica
+                (Hasta)</p>
+            </div>
+            <div class="right__02">
+              <h1 class="right">26 min.</h1>
+              <p class="p__km">Estimación de tiempo
+                de carga rápida de CC
+                (10-80 %)</p>
+            </div>
+            <div class="right__03">
+              <h1 class="right">3.6 s</h1>
+              <p class="p__km">Aceleración
+                (0-100 km/h*)</p>
+            </div>
+            <div class="right__04">
+              <h1 class="right">17 kWh</h1>
+              <p class="p__km">Consumo de energía
+                (por 100km)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="main__pie">
+      Copyright© 2025 Volvo Car Corporation (o sus filiales o empresas
+      licenciadoras) - Centro Atención al Cliente 91 566 62 37
+    </div>
+  </footer>
+
+  <script src="./js/JavascriptEjecicio59.js"></script>
+</body>
+<!--  <header>
+    <button class="header__button" id="boton__azul"><img src="./assets/img/colors_btn/color_azul.svg" alt=""></button>
+    <button class="header__button" id="boton__branco"><img src="./assets/img/colors_btn/color_branco.svg" alt=""></button>
+    <button class="header__button" id="boton__negro"><img src="./assets/img/colors_btn/color_negro.svg" alt=""></button>
+    <button class="header__button" id="boton__grisoscuro"><img src="./assets/img/colors_btn/color_grisoscuro.svg" alt=""></button>
+    <button class="header__button" id="boton__amarelo"><img src="./assets/img/colors_btn/color_amarelo.svg" alt=""></button>
+</header> -->
+<!-- <div class="container">
+    <div class="tarxeta" id="azul">
+      <img class="image" src="./assets/img/color_cars_img/azul.avif" alt="">
+    </div>
+    <div class="tarxeta" id="branco">
+        <img class="image" src="./assets/img/color_cars_img/branco.avif" alt="">
+    </div>
+    <div class="tarxeta" id="negro">
+      <img class="image" src="./assets/img/color_cars_img/negro.avif" alt="">
+  </div>
+  <div class="tarxeta" id="grisoscuro">
+    <img class="image" src="./assets/img/color_cars_img/grisoscuro.avif" alt="">
+</div>
+<div class="tarxeta" id="amarelo">
+  <img class="image" src="./assets/img/color_cars_img/amarelo.avif" alt="">
+</div>  -->
+</html>

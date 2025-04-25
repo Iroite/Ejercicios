@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 44: Ducati Web</title>
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/css/style-exercicio44.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header-left">
+            <div class="img">
+              <img src="./assets/img/es.png" alt="Bandera España" />
+            </div>
+            <div class="spain"><h6>España</h6></div>
+          </div>
+          <div class="header-right"><h6>MyDucati</h6></div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header__nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Modelos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Equipamiento</a>
+                </li>
+                <li class="nav-item">
+                  <img
+                    class="logo"
+                    id="logo1"
+                    src="./assets/img/ducati_logo.png"
+                    alt="Logo Ducati"
+                  />
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Solicitar Test</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- <div class="container">
+ <div class="row">
+            <div class="col-12 col-md-3 fondo">
+                <div class="mb-3">
+                    
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Modelos</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+            </div>
+               <div class="col-12 col-md-3 fondo">     
+                    <div class="mb-3">
+                        
+                        <h6>Tipo de motor</h6>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">2 cilindros</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">4 cilindros</label>
+                          </div>
+</div>
+               </div>
+<div class="col-12 col-md-3 fondo">
+                    
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Precio</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                
+                </div>
+<div class="col-12 col-md-2 lupa d-flex justify-content-end"><div class="buscar"><img src="./assets/img/search-normal.svg" alt=""></div>
+                </div>
+            </div>
+</div>
+       
+</div> -->
+
+      <div class="transparente">
+        <div class="container bottom">
+          <div class="row">
+            <div class="col-11 fondo__campos">
+              <div class="row ">
+                <div class="col">
+                  <div class="form__campos">
+                    <label class="modelo" for="">Modelos</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option class="text" selected>
+                        Seleccióna un Modelo
+                      </option>
+                      <option class="text" value="1">DesertX</option>
+                      <option class="text" value="2">Diavel V4</option>
+                      <option class="text" value="3">Hypermotard 698</option>
+                    </select>
+                    <!-- <div class="vl"></div> -->
+                  </div>
+                </div>
+                <!-- <div class="vl"></div> -->
+                 
+                <div class="col ">
+                 <label class="modelo" for="">Tipo de motor</label><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >2 cilindros</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >4 cilindros</label
+                    >
+                  </div>
+                </div>
+               
+                <div class="col col-3--media">
+                 <div class="form__campos--left">
+                  <label class="modelo" for="">Precio</label>
+
+                  <select
+                    class="form-select" aria-label="Default select example"
+                  >
+                    <option class="text" selected>Selecciona un precio</option>
+                    <option class="text" value="1">100€</option>
+                    <option class="text" value="2">500€</option>
+                    <option class="text" value="3">7000€</option>
+                  </select>
+
+                </div></div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="col-12 col-md-2 lupa">
+                <div class="buscar">
+                  <img src="./assets/img/search-normal.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="foot" >
+      <img src="./assets/img/Ducati-Member-of-the-Audi.svg" alt="Ducati-Member-of-the-Audi" class="footer"/>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+  
+  </body>
+</html>

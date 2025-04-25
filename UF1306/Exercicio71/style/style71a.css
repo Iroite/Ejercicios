@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: none;
+ color:grey ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:10px ;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+ cursor: pointer;
+}
+html{
+    font-size: 10px;
+}
+.swiper {
+    width: auto;
+    height: auto;
+    max-width: 192rem;
+    max-height: 108rem;
+   }
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+   }
+
+.slider{
+    object-fit: contain;
+    width: fit-content;
+   }

@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: black;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:14px ;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: primary;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: secondary;
+    src: url(../fonts/Poppins-Regular.ttf);
+    }
+@font-face {
+    font-family: terciary;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: secondary;
+}
+
+.header__nav{
+    border-bottom: 10px solid #C00;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+    /* padding: 10px 0px 0px 39%; */
+}
+
+.header-right{
+    display: flex;
+    justify-content: end;
+    /* /* align-content: center;
+    padding: 10px 5px 0px 12%; */
+} */
+h6{
+    color: #FFF;    
+    font-family: secondary;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2px 5px 0px 10px;
+    }
+
+.container-fluid{
+    
+    /* height: 10%;
+    width: 50%; */
+    font-family: secondary;
+}
+.navbar-nav{
+    
+    border:0px 0px 0px 0px;
+    padding: 1% 30% 1% 30%;
+}
+
+#logo1{
+    height: 35px;
+    width: 32px;
+    position: center;
+
+}
+body {
+        background-image: url('../../assets/img/ducati-diavel-v4.webp');
+        background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+        background-position: center; /* Centra la imagen en el fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        height: 85vh;
+        
+      }
+.fondo{
+    background-color: white;
+        
+}
+
+main{
+    padding-top: 30%;
+    height: 85vh;
+}
+.form-select{
+    color: #3E4C66;
+    font-family: secondary;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+
+.form-check-label{
+    color: #3E4C66;
+    font-family: secondary;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.container{
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+    background: rgba(15, 15, 15, 0.81);
+    
+}
+
+.md-3{
+    justify-self: end;
+}
+.col-11{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+
+    h6{
+    color: #3E4C66;
+    font-family: secondary;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.28px;
+    }
+}
+.buscar{
+    border-radius: 2px;
+    background: #C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    width: 104px;
+}
+.lupa{
+    align-items: end;
+}
+.foot{
+    text-align: center;
+    background-color: black;
+    padding:0% 38%;
+    }     

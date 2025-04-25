@@ -1,0 +1,48 @@
+* {
+  margin: 2rem;
+  padding: 2rem;
+  outline: 2rem;
+  box-sizing: border-box;
+}
+
+body {
+ background: white;
+ color: rgb(94, 94, 94) ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:16px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+#ingresarDatos{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:none;
+    color:blue;
+    width: 20rem;
+    padding-right: 0px;
+    margin-right: 0px;
+
+
+
+}
+.main__boton{
+background-color: black;
+color:aliceblue;
+font-weight: 900;
+border-color: 1rem solid rgb(2, 2, 2);
+margin-left: 0px ;
+width: 9rem;
+
+}
+#lista{
+    border: 5px solid grey;
+    width:31rem;
+}

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: none;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:16 ;
+ font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family:bold;
+    src: url(../fonts/blender-pro-bold.otf);
+}
+@font-face {
+    font-family:book ;
+    src: url(../fonts/blender-pro-book.ttf);
+}
+
+
+.nav__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top:2rem;
+}
+.logo img{
+     width: 16.58538rem;
+    height: 4.25rem;
+    justify-content: start; 
+}
+.menu__div{
+
+    display: flex;
+    align-self:flex-end;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    height: 80vh;
+    margin: 0rem 260rem 0rem 4.69rem
+}
+.div__menu{
+    background: rgba(0, 0, 0, 0.60);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50.8125rem;  
+    height: 3rem;
+    color: #FFF;
+    font-family: "book";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+  
+
+}
+
+.a__menu{
+    color:white;
+    text-decoration: none;
+
+}
+
+.padd{
+    padding-left:3rem ;
+}
+
+.amarillo{
+    text-align: center;
+    background-color: #FCEE09;
+    color:#000;
+    width: 160px;
+    height: 3rem;
+    padding-top: 1.1%;    
+    }
+/* .b__menu{
+    background-color: #FCEE09;
+    padding: 0.75rem;
+    border: #FCEE09;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+} */
+#video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.norte{
+    color: #000;
+    font-family: "bold";
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.5rem; /* 100% */
+   
+}
+
+.norte h1{
+    color: #000;
+    font-family: "book";
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.5rem; /* 100% */
+}
+
+#mail::placeholder{
+    color: #202020; 
+    background-color: #FDF85C;
+    font-family: "book";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 2rem;
+}
+.mail{
+    color: #FFF;    
+    font-family: "book";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+#mail{
+    border: 1px solid #000;
+    width: calc(100% - 200px);
+    height: 3rem;
+    
+}
+#boton{
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%);
+    background-color: #000;
+    color: #FFF;
+    width: 10rem;
+    height: 3.0625rem;
+
+    
+}
+.legal{
+    color: #000;
+    font-family: "book";
+    font-size: 1.25rem; 
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0% 0% 0% 2%;
+}
+.cabecera{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.checkbox{
+    display: flex;
+    align-items: flex-start;
+    padding: 8% 1% 1% 0%;
+}
+#rexistrate::
+.projekt{
+    color: #000;
+    font-family: "book";
+    font-size: 1.25rem;
+    font-style: normal; 
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1.9rem;
+}    
+.abajo{
+    color: #000;
+    font-family: "book";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+
+}
+.margin{
+    width: 100%;
+}
+.logos__consola{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

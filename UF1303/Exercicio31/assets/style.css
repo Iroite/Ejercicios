@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: burlywood;
+ color: brown ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 12;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: "nav";
+    src: url(./fonts/enviro.ttf);
+}
+nav a{
+    color: #b20505;
+    font-family: "nav";
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+  }
+ nav ul li {
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+}
+nav a{
+    text-decoration: none;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+.px-box{
+    background-color: aliceblue;
+    width: 100px;
+    }
+.percent-box{
+    background-color: #e2c2c2;
+    width: 95%;
+}
+.em-box{
+    background-color: aqua;
+    font-size: 10.5em;
+}
+.rem-box{
+    font-size: 2rem;
+    background-color: blue;
+}
+.vw-box{
+    width: 98vw;
+}
+.vh-box{/* esto sería como un porcentaje del navegador en la pantalla del dispositivo en que vemos */
+    height:96vh;
+    background-color: brown;
+}

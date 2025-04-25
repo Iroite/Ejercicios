@@ -1,0 +1,16 @@
+{
+  "name": "sonsdeanimais-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vaca", "gato","leon", ""],
+  "author": "Carlos",
+  "license": "ISC",
+  "description": "my-first-app",
+  "devDependencies": {
+    "electron": "^35.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: none;
+ color:black ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 1rem ;
+ font-family: url(assets/fonts/Nunito-Regular.ttf);
+}
+html{
+  font-size: 10px;
+}
+button {
+ cursor: pointer;
+}

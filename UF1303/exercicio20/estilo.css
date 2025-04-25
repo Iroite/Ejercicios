@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin:0;
+    padding: 100px;
+}
+h1{
+    color:#494947;
+text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+background-color: #2c966d;
+color:rgb(255, 255, 255);
+margin: 10px 0;
+padding: 10px;
+border-radius: 15px;
+}
+.maza{
+    background-color: green;
+}
+.laranxa{
+    background-color: rgb(247, 184, 50);
+}
+.uva{
+    background-color: red;
+}
+li:hover{
+    background-color: #90ee90;
+}

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: none ;
+ color: lightgray;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: Inter ;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: Inter;
+    src: url(./font/Inter-VariableFont.ttf);
+}
+body {
+    background-image: url('../assets/img/Fondo_glassmorphic.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    cursor:url(../assets/img/cursor.svg), auto;
+}
+
+.logo{
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.caixa__prin{
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row;
+    width: 46.9375rem;
+    height: 30.3125rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid #FFF; /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.46);;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left:1rem;
+    width: 46.9375rem;
+    height: 30.3125rem;
+    
+    
+}
+
+.caixa__dereita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+    /* box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25); */
+    
+    }
+
+.fondo__derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 14rem;
+    height: 28rem;
+    border-radius: 8px;
+    background: rgba(55, 103, 234, 0.12);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin:  2rem 2.19rem 2.13rem 2.13rem;
+}
+
+.rhombus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg{
+
+    height: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+h2{
+    font-family: Inter;
+    color:#5A5A5A;
+
+}
+.tittle{
+    color: #202020;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2rem 0rem 0rem 2rem;
+    
+}
+.email{
+    color: #202020;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1.5rem 0rem 0.75rem 2rem;
+}
+
+.placeholder{
+    width: 24.625rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    padding: 0rem 0rem 0rem 1rem;
+    margin:0rem 0rem 0rem 1.5rem;
+}
+
+.contrasinal{
+    padding: 1.5rem 0rem 0.75rem 0rem;
+}
+.parrafo{
+    color: #5A5A5A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    padding: 1rem 0.5rem 1rem 1rem;
+    width: 14rem;
+    
+
+}
+.saber{
+    color: #3767EA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    margin:0rem;
+}
+.olvido{
+    margin: 0px;
+    font-size: 0.875rem;
+    line-height: normal;
+    padding: 1.5rem 0rem 0.4rem 2rem;;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24.625rem;   
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: #3767EA;
+    color:white;
+    padding: 0px 0px 0px 1rem;
+    margin: 2rem 0rem 3rem 2rem;
+}
+.reg{
+   margin:0px;
+   padding: 0px;   
+   text-align: start;
+   padding:0rem 0rem 0rem 2rem;
+} 
+.bola_cristal{
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+    animation: botes 10s ease-in-out 1s infinite ;
+
+}
+@keyframes botes {
+    0% {
+        left: 80%;
+        top: 0%;
+        scale: 0.5;
+      }
+      33% {
+        left: 75%;
+        scale: 1.5em;
+        top: 60%;
+       
+      }
+      50% {
+        left: 75%;
+        scale: 2em;
+        top: 95%;
+       
+      }
+      66%{
+        left: 80%;
+        top: 50%;
+      }
+      100% {
+        left: 80%;
+        top: 0%;
+        scale: 0.5;
+    }
+    
+}
+.bola_cristal img{
+    width: 200px;
+}

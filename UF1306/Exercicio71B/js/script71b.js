@@ -20,4 +20,4 @@ function previaSlide() {
  mostrarSlide(currentIndex - 1); 
 }
 // Autoplay
-setInterval(siguienteSlide, 5000);
+setInterval(siguienteSlide, 3062000);

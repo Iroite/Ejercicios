@@ -19,6 +19,9 @@ body, input, button {
 button {
  cursor: pointer;
 }
+figure{
+    text-align: center;
+}
 html{
     font-size: 10px;
 }
@@ -43,13 +46,23 @@ html{
     object-fit: cover;
     height: 100vh;
    }
+
+.video__figcap{
+    position: absolute;
+    top:0px;
+    left:200px;
+    /* object-fit: center; */
+    /* fill | contain | cover | scale-down | none | initial | inherit; */
+}   
 #prev{
 position: absolute;
-top: 15%;
+top: 40%;
 left: 0px;
 height: 10vh;
 z-index: 99;
 border: 1px solid transparent;
+background-color: transparent;
+color:rgb(252, 23, 23)
 }
 #siguiente{
     position: absolute;
@@ -59,5 +72,5 @@ border: 1px solid transparent;
     top: 40%;
     background-color: transparent;
     border:0;   
-    color: yellowgreen;
+    color: rgb(7, 247, 255);
 }

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body {
+ background: #0F0F0F;
+ color: var(--color-primary);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size:14px;
+ font-family:PlusJakartaSans;
+}
+
+button {
+ cursor: pointer;
+}
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+:root{
+    --font-primary: 'HelveticaNeue', sans-serif;
+    --color-primary: #fff;
+}
+
+.header__a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 2rem;
+    height: 6.4rem;
+    /* background: var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease; */
+  }
+  .header__nav{
+    display: flex;
+    align-items: center;   
+    gap: 2rem; 
+}
+.header__logo{
+    height: 2.6rem;
+    width: 14.5rem;
+    margin-left: 6rem;
+}
+.header__a--Porfolio{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 400;
+    border:white 0.1rem solid;
+    border-radius: 10rem;
+    padding:1rem 3rem  1rem 3rem;
+}
+.menu__nav{
+    display: flex;
+    justify-content:end;
+    align-content: end;
+    align-items: center;
+    gap:5rem;
+    margin-left:110rem;
+  
+}
+
+.main__text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top:30rem;
+    width: 130rem;
+    height: 35rem;
+    font-size: 14rem;
+    color: var(--color-primary);
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 30rem;
+    color: var(--color-primary);
+}
+
+.planet{
+    height:34rem;
+    width: 34rem;
+    top:100;
+
+
+}
+
+.slider__h1{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 18vw, 20rem);
+    text-align: center;
+    line-height: 25vh;
+}
+.image-slider:nth-child(-7){
+    position: absolute;
+    top: 80;
+    right: 0;
+    background-image: url(../assets/img/planet.png);
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    background-position: right bottom;
+}

@@ -8,17 +8,14 @@ html{
     font-size: 10px;
 }
 body {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; no veo que haga nada   */
  background: #66D1FF;/*linear-gradient(rgb(18, 18, 82), rgb(184, 184, 184)); */;
- color:rgb(78, 77, 77);
+ color:black;
  -webkit-font-smoothing: antialiased;
 }
 
 body, input, button {
  
- font-family:var(--font-primary) ;
+ font-family:Poppins ;
 }
 
 button {
@@ -35,39 +32,6 @@ button {
 .input{
     margin-top: 10rem;
 }
-
-  /* Fondo */
-  
-  /* .fondo-dia{
-    background: linear-gradient(125deg, #97c1e8 0%, #61a1dd 17%, #002e7a 100%);
-  }
-  
-  .fondo-noite{
-    background: linear-gradient(125deg, #012241 0%, #013565 17%, #002e7a 100%);
-  }
-   */
-
-/* Weather  el icono del sol se mueve lentamente*/
-  
-.weather__icon{
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-    animation: movemento 60s ease-in-out infinite;
-  }
-  
-  @keyframes movemento {
-  
-    0%, 100%{
-      scale: 1;
-      rotate:0deg;
-    }
-  
-    50%{
-      scale: .80;
-      rotate:360deg;
-    }
-    
-  }
-
 .control{
     margin-bottom: 2rem;
 }
@@ -78,7 +42,7 @@ button {
 
 a{
     font-size: 1.5rem;
-    color:white;
+    color:rgb(2, 0, 3);
     text-decoration: none;
 }
 #dategl{
@@ -88,14 +52,23 @@ a{
 #forecast-container{
     display:flex;
     justify-content: center;
-    background-color: #aea9fa;
-    height:15rem;
+    background-color:none;
+    height:12rem;
     width: 5rem;
     border-radius: 1rem;
     margin: 1rem;
     
     
 }
+/* Pronostico */
+
+.pronostico{
+    margin: 1rem 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
 
 #forecast-template{
     background-color: #fafbfc;
@@ -103,40 +76,98 @@ a{
     width: 5rem;
 }
 #pronostico__container{
+    background-color: var(--bulma-scheme-main);
+    width: 55px;
+    height: 90px; 
+    /* estas 3 lineas las escribió Rubén */
+        
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1.5rem;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
 }
-
 #pronostico__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #b9dcff;
     padding: 3rem;
+    width: 5.5rem;
 }
 #date{
     display: flex;
     justify-content: center;
     font-family: Tahoma;
     background-color: none;
-    border: 0px solid rgb(179, 29, 29);
     border-radius: 1rem;
-
 }
 
 #weather__icon{
-    background-color: #a5cffa;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    animation: movemento 5s ease-in-out infinite;
+    
     height: 6rem;
-    border: 2px solid silver;
+    border: 0.1rem solid silver;
     border-radius: 0.5rem;
+    
 }
+@keyframes movemento {
+  
+    0%, 100%{
+      scale: 1;
+      rotate:355deg;
+    }
+  
+    50%{
+      scale: .95;
+      rotate:360deg;
+    }
+    
+  }
 
 #temperature{
     background-color: #a5cffa;
-    height: 3rem;
+    height: 1.7rem;
     width: 4.5rem;
     border: 2px solid silver;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-content: center;
+}
+/* Fondo */
+  
+.fondo-dia{
+    background: linear-gradient(125deg, #97c1e8 0%, #61a1dd 17%, #002e7a 100%);
+  }
+  
+.fondo-noite{
+    background: linear-gradient(125deg, #012241 0%, #013565 17%, #002e7a 100%);
+  }
+  
+  .background{
+    background: rgb(63, 188, 226);
+  }
+.footer{
+    background-color: rgb(2, 0, 3);
+    color: rgb(255, 255, 255);
+    padding: 1rem ;
+    text-align: center;
+ 
+    bottom: 0;
+    width: 100%;
+}
+.navbar{
+    background-color: lightgrey;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

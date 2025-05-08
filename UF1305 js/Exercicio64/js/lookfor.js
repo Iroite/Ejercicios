@@ -6,7 +6,7 @@ const API_KEY = "3e867330616c39fa60d18a1af5d82f16"
 
 
 async function obterCoordenadas(city) {
-  const apiURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`
+  const apiURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`
   try {
     const response = await fetch(apiURL);
     return await response.json();

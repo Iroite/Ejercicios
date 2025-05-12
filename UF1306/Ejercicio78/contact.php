@@ -50,7 +50,7 @@ if(get_magic_quotes_gpc()) {
 }
 
 
-$address = "info@exemplo.com";
+$address = "info@exemplo.com"; // e-mail a personlizar con el de destino
 
 
 // Below the subject of the email

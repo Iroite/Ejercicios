@@ -76,9 +76,10 @@
     <div id="modal" class="modal">
         <div class="modal__contido">
             <!-- <span id="pecharModal" class="pechar">&times;</span> -->
-            <form class="modal__form">
+            <form class="modal__form" method="post" action="contact.php">
                 <div class="first1">
-                    <input class="form__flex" type="mail" id="mail" placeholder="Introduce teu email aquí" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+                    <input class="form__flex" type="mail" id="email_contact" placeholder="Introduce teu email aquí" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                 
                     <button class="texto__boton" type="submit">
                         AVÍSAME

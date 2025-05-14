@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="gl" class="theme-dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Tempo</title>
+  <link rel="stylesheet" href="./style/bulma.min.css" />
+  <link rel="stylesheet" href="./style/style64.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar is-fixed-top is-info pt-6" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item title" href="index.html"> O Tempo en Galiza </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.8661782,-8.544077) "> Casa </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.28,-8.87)"> Campara </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.7369066,-7.8737579)"> Cariño </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.06,-5.38)"> San Isidro </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.85,-8.58)"> Polígono Industrial "Novo Milladoiro" </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(40.4335285,-3.6809966)"> Madrid </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.8657561,-4.5065505)"> Cervera de Pisuerga</a>
+          <a id="demo"class="navbar-item" href="#" onload="actualizarDatos(position.coords.latitude, position.coords.longitude)">  </a>
+
+          
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-light" href="lookfor.html">
+                  Buscar cidade
+                </a>
+              </div>
+            </div>
+          </div>  
+      </div>
+
+  </nav>
+    <!-- <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item title__principal" href="index.html"> O Tempo en Galiza </a>
+
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.8660422,-8.541)"> Casa</a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.28,-8.87)"> Campara</a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.7369066,-7.8737579)"> Cariño</a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(43.06,-5.38)"> San Isidro </a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(42.85,-8.58)"> P. Ind. "Novo Milladoiro"</a>
+          <a class="navbar-item" href="#" onclick="actualizarDatos(40.433523,-3.6782053)"> Madrid</a>
+         
+          <a id="demo"class="navbar-item" href="#" onload="actualizarDatos(position.coords.latitude, position.coords.longitude)">  </a>
+
+          
+          </div>
+      </div>
+
+  </nav> -->
+  </header>
+  <main class="main">
+
+    
+    
+
+
+
+
+      <section class="weather">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="weather__location is-flex is-justify-content-center">
+              <img src="./assets/location_icon.svg" alt="Ubicación" />
+              <h2 id="weatherLocation" class="weather__h2 title has-text-black-bis is-centered">
+            ¿Donde?
+              </h2>
+
+            </div>
+            <div class="weather__location is-flex is-justify-content-center">
+              <h4 id="date" class="weather__h2 title has-text-black-bis is-centered"></h4>
+
+            </div>
+            <div class="weather__icon is-flex is-justify-content-center">
+              <img id="weatherIcon" src="./assets/iconos/01d.png" alt="" />
+            </div>
+            <div class="weather__temperature is-flex is-justify-content-center">
+              <h2 id="weatherTemperature" class="weather__h2 title is-1 has-text-black-bis">
+                
+              </h2>
+            </div>
+            <div class="description is-flex is-justify-content-center">
+              <h2 id="description" class="date__h2 title is-1 has-text-black-bis">
+                Fecha
+              </h2>	
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="pronostico" id="forecast-container">
+
+      <template id="forecast-template">
+        <div class="pronostico__container">
+          <div class="pronostico__card">
+            <h4 id="date__card"></h4>
+            <img src="" id="weather__icon" alt="">
+            <h4 id="temperature"></h4>
+          </div>
+        </div>
+      </template>
+
+    </div>
+      <!-- <div id="forecast-container" class="pronostico">
+        <template id="forecast-template">
+          <div class="pronostico__container">
+            <div class="pronostico__card">
+              <h4 id="date"></h4>
+              <img id="weather-icon" src="" alt=""/>
+              <h4 id="temperature"></h4>
+            </div>
+          </div>
+        </template>
+        
+      </div> -->
+   
+<section class="first__features">
+<div class="columns">
+            <div class="column">
+              <div class="column  box is-flex is-justify-content-center is-align-items-center">
+                <!-- <img src="./assets/sun-fog.svg" alt=""> -->
+                <h5 class="features__h5 title is-5 pr-3">Sensación térmica:</h5>
+                <p id="feels_like" class="features__p subtitle is-4"></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box is-flex is-justify-content-center is-align-items-center">
+                <h5 class="features__h5 title is-5 pr-3">Humidade:</h5>
+                <p id="humidity" class="features__p subtitle is-4"></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box is-flex is-justify-content-center is-align-items-center">
+                <h4 id="dategl" class="weather__h4   is-centered"></h4> 
+              </div>
+            </div>
+            <div class="column">
+              <div class="box is-flex is-justify-content-center is-align-items-center">
+               
+ <a target="_parent" style="font-family:sans-serif; font-size: 18px;color:rgb(163, 163, 163)" href="http://www.wdisseny.com/lluna/?lang=en#ex_03">Ver las fases lunares en la Api Web </a>
+              </div>
+            </div>
+            
+</section>
+
+<section class="second__features">
+  <div class="columns">
+              <div class="column">
+                <div class="box   is-flex is-justify-content-center is-align-items-center">
+                  <h5 class="features__h5 title is-5 pr-3">Temp Max:</h5>
+                  <p id="temp__max" class="features__p subtitle is-4"></p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box is-flex is-justify-content-center is-align-items-center">
+                  <h5 class="features__h5 title is-5 pr-3">Temp Min:</h5>
+                  <p id="temp__min" class="features__p subtitle is-4"></p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box is-flex is-justify-content-center is-align-items-center">
+                  <h5 class="features__h5 title is-5 pr-3">P. At. a nivel del mar</h5>
+                  <p id="pressure" class="features__p subtitle is-4"></p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box is-flex is-justify-content-center is-align-items-center">
+                  <h5 class="features__h5 title is-5 pr-3">Presión Local:</h5>
+                  <p id="localPressure" class="features__p subtitle is-4"></p>
+                </div>
+              </div>
+              
+  </section>
+  <section class="third__features">
+    <div class="columns">
+                <div class="column">
+                  <div class="box is-flex is-justify-content-center is-align-items-center">
+                    <h5 class="features__h5 title is-5 pr-3">Vento:</h5>
+                    <p id="wind" class="features__p subtitle is-4"></p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="box is-flex is-justify-content-center is-align-items-center">
+                    <h5 class="features__h5 title is-5 pr-3">Dirección do vento:</h5>
+                    <p id="wind_deg" class="features__p subtitle is-4"></p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="box is-flex is-justify-content-center is-align-items-center">
+                    <h5 class="features__h5 title is-5 pr-3">Nubosidde</h5>
+                    <p id="clouds" class="features__p subtitle is-4">1016</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="box is-flex is-justify-content-center is-align-items-center">
+                    <h5 class="features__h5 title is-5 pr-3">Visibilidade:</h5>
+                    <p id="visibility" class="features__p subtitle is-4">1016</p>
+                  </div>
+                </div>
+                
+    </section>
+    <section class="fourth__features">
+      <div class="columns">
+                  <div class="column">
+                    <div class="box is-flex is-justify-content-center is-align-items-center">
+                      <a href="lookfor.html">Buscar</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box is-flex is-justify-content-center is-align-items-center">
+                      <div id="ex3"></div>
+
+                      <br><br>
+                   
+                      
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box is-flex is-justify-content-center is-align-items-center">
+                     
+                      <img src="./assets/sun.svg" alt="Abrente"> 
+                      <h5 class="features__h5 title is-5 pr-3">Abrente:</h5>
+                      <p id="sunrise" class="features__p subtitle is-4"></p>  
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box box is-flex is-justify-content-center is-align-items-center">
+                      <img src="./assets/sun-fog.svg" alt="Solpor"/> 
+                      <h5 class="features__h5 title is-5 pr-3">Solpor:</h5>
+                      <p id="sunset" class="features__p subtitle is-4"></p>
+                      
+                     
+                
+                    </div>
+                  </div>
+                  
+      </section>
+    
+  </main>
+  <footer class="footer mt-4">
+    <p class="footer__p has-text-centered">
+      <h1 class="footer__text"> O tempo en Galiza - 2025 - Tódolos dereitos reservados</h1> 
+    </p>
+</footer>
+  <script src="./js/script64.js"></script>
+  <script src="./js/buscar.js"></script>
+  <!-- <script  src="./js/navbar.js"></script> -->
+</body>
+
+</html>

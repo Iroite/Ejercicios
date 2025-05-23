@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Color-Baground, #181928);;
+    color: whitesmoke;
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+body,
+input,
+button {
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    font-size: 10px;
+}
+.header{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+.header__estatistica{
+display:flex;
+justify-content: space-around;
+/* width: 36.5rem; */
+}
+.nav__bar{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+    /* width: 39rem; */
+    height: 4.6rem;
+}
+.titulo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    /* width: 39rem; */
+}
+.root{
+    display:flex;
+    flex-wrap: wrap;
+}
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 45rem; */
+    gap:2rem;
+    justify-content: center;
+}
+
+.boton__off {
+    background-color: #222232;
+    border-radius: 15rem;
+    width: 9.4rem;
+    height: 9.4rem;
+    border: 10px solid #414158;
+/*     
+    fill: var(--Second-Baground, #222232);
+    background: #414158;
+    border-radius: 15rem;
+    padding: 1rem 1rem 1rem 1rem;
+     */
+    
+    
+    /* display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-top: 15vw;
+    margin-left:1.6rem;
+    gap:0rem  */
+
+}
+.svg{
+    position: relative;
+    align-self: center;
+    
+}
+.club {
+    
+    color: var(--text-color-1, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    gap: 5rem;
+    /* 100% */
+}
+.escudo__equipo{
+    width: 6.4rem;
+
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    /* margin-left: 3%; */
+    margin-top: 15vw;
+    width: 34.3rem;
+    height: 5.6rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--Linear-Button, linear-gradient(90deg, #4568DC 0%, #B06AB3 100%));
+}
+
+.boton__p{
+    color: var(--text-color-1, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem; /* 200% */
+    letter-spacing: .125rem;
+    text-transform: uppercase; 
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* Último partido */
+
+.resultados{
+   
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+}
+
+.resultados__p{
+     font-size: 3rem;
+}
+.final__match{
+    color:greenyellow;
+    text-align: center;
+width: 100%;
+    }
+.resultados__escudo{
+    height: 6.4rem;
+    width: 6.4rem;
+}

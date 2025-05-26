@@ -1,200 +1,228 @@
 * {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
 body {
- background:transparent ;
- color: black
- -webkit-font-smoothing: antialiased;
+    background: transparent;
+    color: black;
+    -webkit-font-smoothing: antialiased;
 }
 
-body, input, button {
- font-size:10px ;
- font-family:porsche400 ;
+body,
+input,
+button {
+    font-size: 10px;
+    font-family: porsche400;
 }
-html{
+
+html {
     font-size: 10px;
 }
+
 button {
- cursor: pointer;
+    cursor: pointer;
 }
+
 @font-face {
-    font-family: porshe400;
+    font-family: porsche400;
     src: url(../fonts/Porsche\ Next-normal-400-100.ttf);
 }
+
 @font-face {
     font-family: porsche600;
     src: url(../fonts/Porsche\ Next-normal-600-100.ttf);
 }
+
 @font-face {
     font-family: porsche700;
     src: url(../fonts/Porsche\ Next-normal-700-100.ttf);
 }
+
 @font-face {
     font-family: normal400;
     src: url(../fonts/PorscheNextWLa-normal-400-100.ttf);
 }
+
 @font-face {
     font-family: normal700;
     src: url(../fonts/PorscheNextWLa-normal-700-100.ttf);
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-  
+}
+
 .video-container {
     position: relative;
     height: 50vh;
     width: 100%;
-  }
-  
+}
+
 .background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Asegura que el video cubra todo el fondo */
-    z-index: -1; /* Envía el video al fondo */
-  }
-  
+    object-fit: fill;
+    /* Asegura que el video cubra todo el fondo */
+    z-index: -1;
+    /* Envía el video al fondo */
+}
+
 .content {
     position: relative;
-    z-index: 1; /* Asegura que el contenido esté encima del video */
+    z-index: 1;
+    /* Asegura que el contenido esté encima del video */
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     padding: 20px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 8.1%, rgba(0, 0, 0, 0.8) 15.5%, rgba(0, 0, 0, 0.8) 22.5%, rgba(0, 0, 0, 0.78) 29%, rgba(0, 0, 0, 0.73) 35.3%, rgba(0, 0, 0, 0.67) 41.2%, rgba(0, 0, 0, 0.6) 47.1%, rgba(0, 0, 0, 0.52) 52.9%, rgba(0, 0, 0, 0.44) 58.8%, rgba(0, 0, 0, 0.33) 64.7%, rgba(0, 0, 0, 0.22) 71%, rgba(0, 0, 0, 0.12) 77.5%, rgba(0, 0, 0, 0.05) 84.5%, rgba(0, 0, 0, 0.01) 91.9%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     height: 14.8rem;
-  }
-  
-.nav{
+}
+
+.nav {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
-    color:whitesmoke;
-    
-    
-}
-.nav__left{
-display: flex;    
-justify-content: center;
-align-content: center;
-align-items: center; 
-font-family: porshe400;
-font-size: 1.6rem;
-line-height: 2.4;
-letter-spacing: 0%;
+    color: whitesmoke;
+
 
 }
-.left__icon{
-    height:2.4rem ;
-    width:2.4rem ;
+
+.nav__left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: porsche400;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4;
+    letter-spacing: 0%;
+
 }
 
-.nav__logo{
+.left__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.nav__logo {
     height: 1.6rem;
     width: 21rem;
 }
-.model{
+
+.model {
     display: flex;
     justify-content: center;
 
 }
-.model__t{
+
+.model__t {
     width: 88.1rem;
     margin-top: 4.27rem;
 }
 
-.modelpic{
+.modelpic {
     margin-top: -4rem;
-    width:131.1rem ;
+    width: 131.1rem;
 }
 
-.model__pic{
+.model__pic {
     display: flex;
     justify-content: center;
 }
-.botones{
-    margin-top: 30rem;
+
+.botones {
+    margin-top: 25rem;
     display: flex;
     justify-content: center;
-    gap:5rem;
-    
+    gap: 1rem;
+
 }
 
-.button__d{
+.button__d {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
     color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
-    font-family:porshe400;
+    font-family: porsche400;
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-24, 24px); /* 150% */
-    :active{
+    line-height: var(--line-height-24,2.4rem);    /* 150% */
+    
+    width: 20.8rem;
+    :active {
         text-decoration: underline;
-        
-       
     }
 }
 
-.active{
+.active {
     /* text-decoration: underline; */
     border-bottom: 2px solid black;
     padding-top: .4rem;
+    
+    
 }
 
-.modelo__p{
+.modelo__p {
     margin-top: 3.5rem;
     color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
     text-align: center;
-/* www.porsche.com/Semantic/Heading 1 */
-    font-family: var(--font-family-Font-1, "Arial Narrow");
+    /* www.porsche.com/Semantic/Heading 1 */
+    font-family: var(--font-family-porsche400, "Arial Narrow");
     font-size: 67.4px;
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-81_78, 81.78px); /* 121.335% */
+    line-height: var(--line-height-81_78, 81.78px);
+    /* 121.335% */
 }
-.motor{
+
+.motor {
     border-radius: 4px;
     background: var(--color-grey-94, #EFEFEF);
     font-family: porshe400;
     color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
-/* www.porsche.com/Semantic/Slot */
-    font-family: var(--font-family-Font-1, "Arial Narrow");
-    font-size: 2.41rem;
+    /* www.porsche.com/Semantic/Slot */
+    font-family: var(--font-family-porsche400, "Arial Narrow");
+    font-size: 1.41rem;
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-21_84, 21.84px); /* 154.894% */
-    padding: 2rem;
+    line-height: var(--line-height-21_84, 21.84px);
+    /* 154.894% */
+    padding: .4rem;
+    margin-top: 1rem;
 }
-.h6{
-    
+
+.h6 {
+
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
-.precio{
+
+.precio {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 2.4rem;
     color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
     text-align: center;
-    
+    margin-top: 1rem;
     /* www.porsche.com/Arial Narrow/Bold */
-    font-family: var(--font-family-Font-1, "Arial Narrow");
+    font-family: var(--font-family-porsche400, "Arial Narrow");
+    font-family: porsche400;
     font-size: var(--font-size-16, 1.6rem);
     font-style: normal;
     font-weight: var(--font-weight-700, 700);
@@ -202,49 +230,271 @@ letter-spacing: 0%;
 }
 
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
-    gap:3rem;
+    gap: 3rem;
 }
-.bottom{
+
+.bottom {
+    margin-top: 3rem;
     height: 5.4rem;
     width: auto;
     padding: 1.5rem;
     color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
 
     /* www.porsche.com/Semantic/Slot */
-    font-family: var(--font-family-Font-1, "Arial Narrow");
+    font-family: var(--font-family-porsche400, "Arial Narrow");
     font-size: var(--font-size-16, 16px);
     font-style: normal;
     font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-24, 24px); /* 150% */
+    line-height: var(--line-height-24, 24px);
+    /* 150% */
+    border-radius: .4rem;
+    background-color: white;
+    ;
 }
 
+.bottom__b {
+    margin-top: 3rem;
+    background: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: .4rem;
 
+    /* www.porsche.com/Semantic/Slot */
+    font-family: var(--font-family-porsche400, "Arial Narrow");
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-24, 24px);
+    /* 150% */
+}
 
-.descripcion__p{
+.descripcion {
+    margin-top: 3rem;
+    ;
+}
+
+.descripcion__p {
     color: var(--www-porsche-com-nevada, var(--color-grey-43, #6B6D70));
-text-align: center;
+    text-align: center;
 
-/* www.porsche.com/Arial Narrow/Regular */
-font-family: var(--font-family-Font-1, "Arial Narrow");
-font-size: 14.1px;
-font-style: normal;
-font-weight: var(--font-weight-400, 400);
-line-height: var(--line-height-21_84, 21.84px); /* 154.894% */
+    font-size: 1.41rem;
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-21_84, 2.184rem);
+    /* www.porsche.com/Arial Narrow/Regular */
+    font-family: var(--font-family-Porsche400, "Arial Narrow");
+    font-size: 1.41rem;
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-21_84, 2.184rem);
+    /* 154.894% */
 
 }
 
-.texto{
-    display:flex;
+.texto {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0rem 39.5rem ;
-    padding-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+   }
+.text{
+   font-family: porsche400;
+font-weight: 400;
+font-size: 2.84re,;
+line-height: line height/28_35;
+letter-spacing: 0%;
+
 }
 
-.parrafo__p{
+.parrafo__p {
     margin-top: 1rem;
 
+}
+.down{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.left__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    flex-shrink: 0;
+    font-family: porsche400;
+    font-size: 1.41rem;
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-21_84, 2.184rem);
+    /* 154.894% */
+    width: 50%;
+     
+}
+.up{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content:flex-start;
+    width:29.2rem;
+    height: 12rem;
+}
+.aceleracion {
+    width: 12.4rem;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+color: var(--www-porsche-com-black-pearl, var(--color-blue-1, #010205));
+
+/* www.porsche.com/Arial Narrow/Regular */
+font-family: porsche400;
+font-size: 89.7px;
+font-style: normal;
+font-weight: var(--font-weight-400, 400);
+line-height: var(--line-height-89_7, 89.7px); /* 100% */
+}
+.texto__aceleracion {
+    width: 30.7rem;
+    height: 2.4rem;
+}
+.texto__info{
+width: 30.26rem;
+height: 2.4rem;
+}
+
+.texto__potencia{
+    width: 29.2rem;
+    height: 2.4rem;
+}
+.texto__consumo{
+    width: 29.2rem;
+    height: 2.4rem;
+}
+.texto__consumo{
+    width: 29.2rem;
+    height: 2.4rem;
+}
+.mas__info{
+    width: 21.3rem;
+    height: 5.4rem;
+    font-family: porsche400;
+    background-color: white;
+    padding: 1.5rem 2.6rem;
+}
+.abajo{
+width: 23.1rem;
+height: 11.8rem;
+}
+.velocidad{
+font-family: porsche400;
+font-size: 89.7px;
+font-style: normal;
+font-weight: var(--font-weight-400, 400);
+line-height: var(--line-height-89_7, 89.7px); /* 100% */
+}
+.text{
+    color: var(--www-porsche-com-nevada, var(--color-grey-43, #6B6D70));
+
+/* www.porsche.com/Semantic/Slot */
+font-family: var(--font-family-porsche400, "Arial Narrow");
+font-size: var(--font-size-16, 16px);
+font-style: normal;
+font-weight: var(--font-weight-400, 400);
+line-height: var(--line-height-24, 24px); /* 150% */
+}
+.right__box{
+    width:45%;
+    height: 52.74rem;
+}
+.right__img{
+    width: 74.97rem;
+    height: 52.74rem;
+    object-fit: fill;
+}
+.left__img{
+    width: 100%;
+    object-fit: cover;
+}
+.left{
+    width: 55%;  
+    height: aitp;
+}
+.left__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer__img__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+
+    background-color: #010205;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    flex-shrink: 0;
+    font-family: porsche400;
+    font-size: 1.41rem;
+
+
+}
+
+.enlaces {
+    font-family: porsche400;
+    font-size: 1.41rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: white;
+    gap: 26rem;
+    font-family: porsche400;
+    font-size: 1.41rem;
+}
+
+.links {
+    color: var(--www-porsche-com-zircon, var(--color-grey-99, #FBFCFF));
+
+    /* www.porsche.com/Semantic/Link underline */
+
+    font-size: var(--font-size-16, 1.6rem);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-24, 2.4rem);
+    /* 150% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }

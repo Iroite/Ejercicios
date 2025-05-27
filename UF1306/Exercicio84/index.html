@@ -35,38 +35,38 @@
         <img class="model__t" src="./assets/taycan_logo.svg" alt="">
       </div>
       <div class="model__pic">
-        <img src="./assets/cars/models/taycan-berlina.avif" alt="" class="modelpic" />
+        <img id="picCoche" src="./assets/cars/models/taycan-berlina.avif" alt="" class="modelpic" />
       </div>
       <!-- <img src="./assets/cars/modelos/p-model-signature.svg" alt="" class="model"> -->
     </div>
   </header>
   <main>
     <div class="botones">
-      <button class="button__d active">
+      <button id="berlina" onclick="cambiarCoche(0)" class="button__d active">
         <p class="left">Berlina Deportiva</p>
       </button>
-      <button class="button__d">
+      <button id="sport" onclick="cambiarCoche(1)" class="button__d">
         <p class="center">Sport Turismo</p>
       </button>
-      <button class="button__d">
+      <button id="cross" onclick="cambiarCoche(2)" class="button__d">
         <p class="right">Cross Turismo</p>
       </button>
     </div>
     <div class="h1">
-      <h1 class="modelo__p">Taycan</h1>
+      <h1 class="modelo__p" id="taycanM">Taycan</h1>
     </div>
     <div class="h6">
       <h6 class="motor">Eléctrico</h6>
     </div>
-    <div class="precio">Desde EUR 106.252,00 PVP Recomendado <sup>1</sup> </div>
+    <div class="precio" id="price">Desde EUR 106.252,00 PVP Recomendado <sup>1</sup> </div>
 
     <div class="boton"><button class="bottom__b">Cambiar Modelo</button><button
         class="bottom">Configurar</button><button class="bottom">Comprar vehículos nuevos y de ocasión</button></div>
 
 
-    <div class="texto">
+    <div class="texto descripcion__container">
       <div class="descripcion">
-        <p class="descripcion__p">Consumo eléctrico combinado - WLTP* (intervalo modelo): 19,4 – 16,7 kWh/100 km,
+        <p class="descripcion__p" id="descriptionP">Consumo eléctrico combinado - WLTP* (intervalo modelo): 19,4 – 16,7 kWh/100 km,
           Consumo eléctrico bajo - WLTP* (intervalo modelo): 16,6 – 14,4 kWh/100 km, Consumo eléctrico
           medio - WLTP* (intervalo modelo): 16,6 – 13,8 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo modelo):
           17,6 – 14,2 kWh/100 km, Consumo eléctrico muy alto - WLTP*
@@ -76,7 +76,7 @@
           0 – 0 g/km</p>
       </div>
       <div class="parrafo__p">
-        <p class="descripcion__p">
+        <p class="descripcion__p" >
           P.V.P. recomendado para península y Baleares. Incluye transporte, I.V.A. e impuesto de matriculación (IEDMT)
           calculado al tipo estatal aplicable según las emisiones de CO2 del vehículo.
         </p>
@@ -88,38 +88,58 @@
     </div>
     <div class="down">
       <div class="left__box">
-        <div class="up">
-          <div class="aceleracion">4,8 </div>
-          <div class="texto">
-            <p class="text">S</p>
-          </div>
+
+        <div class="aceleration">
+          <div class="up">
+            <div class="aceleracion" >
+             <h6 id="aceleration" class="potencia__h6">4,8</h6> 
+            </div>
+
+            <div class="potencia__power"><p class="kw">S</p></div>
+
+         </div>
+
+
+
+          <div class="texto__aceleracion"><p class="text">Aceleración 0-100 km/h con Launch Control</p></div>
+       
         </div>
-        <div class="texto__aceleracion">
-          <p class="text">Aceleración 0-100 km/h con Launch Control</p>
-        </div>
-        <div class="center">
-          <div class="potencia">300 Kw / 408 cv</div>
+        
+          <div class="center">
+          <div class="potencia">
+            <div class="potencia__power">
+              <h6 class="potencia__h6" id="potenciaKw">300</h6>  <span class="kw">Kw <span class="siete">/</span> </span> <h6 class="potencia__h6" id="potenciaCv">408</h6>  <span class="kw">Cv</span></div>
+            </div>
               <div class="texto__potencia">
                 <p class="text">Potencia máxima (kW)/Potencia máxima (CV)</p>
               </div>
               <div class="texto__info">
-                <p class="text">Más detalles sobre el método de medición en: </p><a href="#" class="info"><img
-                    src="./assets/icons/Component 3.svg" alt="Más información"></a>
+                <p class="text">Más detalles sobre el método de medición en: 
+                  <a href="#" class="info">
+                    <img
+                    src="./assets/icons/Component 3.svg" alt="Más información">
+                  </a>
+                  </p>
               </div>
           </div>
-        </div>
+        
+
+
+
         <div class="abajo">
-          <div class="velocidad">230 <p class="texto">Km/h</p>
-          </div>
-          <div class="texto">
+          <div class="vel__box">
+          <div id="speed" class="velocidad">230 </div>
+          <div class="vel__text"><p class="kw speed">Km/h</p></div></div>
+          <div >
             <p class="text">Velocidad máxima</p>
           </div>
+
         </div>
-        <div class="button">
+        <div class="button__todos">
           <button class="mas__info">Todos los detalles técnicos</button>
         </div>
-
-        <div class="right__box"><img class="right__img" src="./assets/cars/front/frente-taycan-berlina.avif"
+      </div>
+        <div class="right__box"><img id="frontCar" class="right__img" src="./assets/cars/front/frente-taycan-berlina.avif"
             alt="Imagen frontal del modelo Taycan Berlina"></div>
       </div>
   </main>
